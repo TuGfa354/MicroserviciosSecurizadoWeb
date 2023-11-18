@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="../CSS/sobrenosotros.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="../img/General/logo.jpeg" />
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Carnicería La Vaguada</title>
+
+</head>
+<body>
+    <!--
+
+    <div id="menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+-->
+
+    <?php
+    include "header.php";
+    ?>
+    <section>
+
+
+        <!-- <div class="domicilio">
+            <h2><b>Reparto A Domicilio En Toda La Península</b> </h2>
+            <div class="listadomicilio">
+                <div class="pasos">
+                    <div class="foto">
+                        <img src="../img/logo/vaca1.png" alt="pollo">
+                    </div>
+                    <h3>Carne vacuno</h3>
+                    <p>Criada en pastura libre</p>
+                </div>
+                <div class="pasos">
+                    <div class="foto">
+                        <img src="../img/logo/cabra.png" alt="pollo">
+                    </div>
+                    <h3>Recibir</h3>
+                    <p>Envío en 24 horas</p>
+                </div>
+                <div class="pasos">
+                    <div class="foto">
+                        <img src="../img/logo/cerdito.png" alt="pollo">
+                    </div>
+                    <h3>Cocinar</h3>
+                    <p>Cocínalo a tu gusto</p>
+                </div>
+                <div class="../img/logo/pollo.png">
+                    <div class="foto">
+                        <img src="../img/nosotros/icon04.webp" alt="pollo">
+                    </div>
+                    <h3>Comer</h3>
+                    <p>¡Y a disfrutar!</p>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="productos">
+            <div class="populares">
+                <h2>Productos populares</h2>
+                <div class="listapopulares">
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Carnes/ternera/asado.php"><img src="../img/Carnes/Ternera/Asado.jpg"
+                                        title="asado"></a>
+                            </div>
+                            <h3>Asado</h3>
+                            <p>8,99€ </p>
+                        </div>
+
+                    </div>
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Carnes/ternera/aguja.php"><img src="../img/Carnes/Ternera/aguja-de-ternera.jpg"
+                                        title="Aguja de ternera"></a>
+
+                            </div>
+                            <h3>Aguja de ternera</h3>
+                            <p>11,99€</p>
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Charcuteria/embutidos/chorizo.php"><img src="../img/Charcuteria/chorizo2.jpg"
+                                        title="Chorizo"></a>
+
+                            </div>
+                            <h3>Chorizo</h3>
+                            <p>3,50€</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="oferta">
+                <h2>Productos en oferta</h2>
+                <div class="listaoferta">
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Carnes/ternera/babilla.html"> <img src="../img/Carnes/Ternera/Babilla.jpg"
+                                        title="Babilla"></a>
+
+                            </div>
+                            <h3>Asado</h3>
+                            <p>40,00€</p>
+                        </div>
+
+                    </div>
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Carnes/ternera/cadera.php"><img
+                                        src="../img/Carnes/Ternera/cadera-de-ternera.jpg" title="Cadera de ternera"></a>
+
+                            </div>
+                            <h3>Cadera de ternera</h3>
+                            <p>15,99€</p>
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="Carnes/Cerdo/solomillo.php"><img
+                                        src="../img/Carnes/Cerdos/solomillo-de-cerdo.jpg"
+                                        title="Solomillo de cerdo"></a>
+
+                            </div>
+                            <h3>Solomillo cerdo</h3>
+                            <p>5,80€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calidad">
+            <div class="texto">
+                <p class="t1">Carne de la sierra de guadarrama de Madrid </p>
+                <p class="t2">El nivel de la mayor calidad</p>
+                <p class="t3">Nuestro nivel de calidad en producción de carne de vacuno está sujeto <b>exhaustivos y
+                        estrictos controles</b>.</p>
+            </div>
+            <div class="foto">
+                <img src="../img/nosotros/sello-D.O.-carne-de-la-Sierra-de-Guadarrama.jpg" alt="Cadera de ternera">
+            </div>
+        </div>
+        <a class="volver" href="#"><img src="../img/General/flecha-arriba.png" width="50px" height="50px"></a>
+    </section>
+
+
+    <?php include 'footer.php'; ?>
+</body>
+
+</html>

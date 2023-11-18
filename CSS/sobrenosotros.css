@@ -1,0 +1,503 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gabarito';
+
+}
+
+/*CABECERA*/
+
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(29, 0, 0);
+    height: 30px;
+
+}
+
+header ul {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+nav a img {
+    width: 9%;
+}
+.menu {
+    width: 70%;
+    float: right;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+}
+
+nav .menu a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 15px;
+    transition: transform .2s;
+}
+
+
+.desplegable {
+    float: left;
+    overflow: hidden;
+}
+
+
+
+.desplegable .desplegar {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin-right: 15px;
+}
+
+.desplegar a {
+    border-radius: 20px;
+    transition: transform .2s;
+    
+
+}
+
+
+.menu a:hover {
+    background-color: rgb(165, 21, 19);
+    transform: scale(0.9);
+    border-radius: 40px; /*radius de los botones*/
+
+}
+
+
+.desplegados {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 0px 3px 3px rgba(121, 108, 108, 0.382);
+    border-radius: 60px; /*radius de el sombreado*/
+}
+
+
+.desplegados a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.desplegados a:hover {
+    background-color: rgb(165, 21, 19);
+
+}
+
+
+.desplegable:hover .desplegados {
+    display: block;
+}
+
+
+/*CONTENIDO PRINCIPAL*/
+section img:hover {
+    transform: scale(1.03);
+}
+
+section img {
+    transition: transform .2s;
+}
+
+.domicilio {
+    width: 100%;
+    overflow: hidden;
+    color: rgb 238, 229, 229;
+   /* background-color: #1B1B1B;*/
+}
+
+.domicilio h2 {
+    text-align: center;
+    color: rgb(232, 57, 55);
+    font-size: 45px;
+}
+
+.domicilio .listadomicilio {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    row-gap: 5%;
+    column-gap: 0px;
+    width: 60%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+    margin: auto;
+}
+
+/*?cambios/*/
+
+.listadomicilio .pasos {
+    width: 90%;
+    margin: auto;
+}
+
+.listadomicilio .pasos p {
+    float: left;
+}
+
+.listadomicilio .foto img {
+    width: 100%;
+}
+
+.productos {
+    background-color: #12181B;
+    /* background-image: url('../img/General/pasto-transformed.jpeg'); Ruta relativa a la imagen */
+
+    padding-bottom: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional, mantiene la imagen fija al desplazar la página */
+    background-position: center; /* Opcional, centra la imagen */
+
+}
+
+/* Establece una altura máxima y oculta el contenido que exceda esa altura */
+
+
+
+
+
+.populares h2 {
+    padding-top: 4%;
+
+    text-align: center;
+    color: rgb(232, 57, 55);
+    font-size: 70px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.listapopulares {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    row-gap: 5%;
+
+    width: 80%;
+    padding-top: 9%;
+    margin: auto;
+
+
+}
+
+.listapopulares .corte {
+
+    margin: auto;
+
+    background-color: #c1bfbf;
+    font-size: 20px;
+}
+
+.listapopulares .corte .borde {
+    width: 80%;
+     /*?el fondo gris con puntos feos*/
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.listapopulares .corte p {
+    margin-top: 6%;
+    width: 100%;
+    font-weight: bold;
+    text-align: right;
+}
+
+.listapopulares .corte h3 {
+    color: rgba(229, 34, 32, 255);
+    font-weight: normal;
+}
+
+.listapopulares .foto img {
+    width: 100%;
+    margin: 0%;
+}
+
+.oferta h2 {
+    text-align: center;
+    color: rgb(232, 57, 55);
+    font-size: 70px;
+    margin-top: 15%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.listaoferta {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    row-gap: 5%;
+    width: 80%;
+    padding-top: 9%;
+    margin: auto;
+    padding-bottom: 6%;
+}
+
+.listaoferta .corte {
+    margin: auto;
+    height: auto;
+    background-color: #fff;
+    font-size: 30px;
+}
+
+.listaoferta .corte .borde {
+    width: 96%;
+    /*! border: 1px gray dotted; */
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.listaoferta .corte p {
+    margin-top: 6%;
+    width: 100%;
+    font-weight: bold;
+    text-align: right;
+}
+
+.listaoferta .corte h3 {
+    color: rgba(229, 34, 32, 255);
+    font-weight: normal;
+}
+
+.listaoferta .foto img {
+    width: 100%;
+    margin: 0%;
+}
+
+.calidad {
+    overflow: hidden;
+    margin-top: 1%;
+    background-color: black;
+}
+
+.calidad .texto {
+    float: left;
+    width: 35%;
+    margin: 10%;
+    margin-right: 5%;
+
+}
+
+.calidad .texto .t1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(232, 57, 55);
+    line-height: 1.5;
+}
+
+.calidad .texto .t2 {
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+    margin-bottom: 5%;
+}
+
+.calidad .texto .t3 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+}
+
+.calidad .foto {
+    float: left;
+    width: 25%;
+    margin-top: 3%;
+}
+
+.calidad .foto img {
+    width: 100%;
+}
+
+/*PIE DE PÁGINA*/
+.pie-pagina {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(165, 21, 19);
+
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-items: start;
+
+
+}
+
+.box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps {
+    width: 10%;
+}
+
+.box figure img {
+    width: 250px;
+}
+
+.red-social {
+
+    width: 45%;
+    padding-left: 60px;
+
+}
+
+.red-social h2 {
+    color: white
+
+}
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: rgba(229, 34, 32, 255);
+    text-align: center;
+    transition: all 300ms ease;
+    margin-top: 35px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(114, 27, 41);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgba(229, 34, 32, 255);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.volver {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.corte {
+    hover {
+        transform: scale(1.1);
+    }
+}
+
+/*MENU*/
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+/* Estilo de los elementos del menú */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #351bfa;
+}
+
+/*Esto es para los enlaces del pie*/
+
+.ayuda-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+
+.ayuda-lista li {
+    
+    margin-left: 0; /* Elimina el margen izquierdo */
+    font-size: 20px;
+    color: rgb(48, 19, 165);
+    margin-bottom: 18px; /* Aumenta el espacio entre elementos */
+}
+
+.ayuda-lista li a {
+    text-decoration: none;
+    color: rgb(169, 130, 130);
+    transition: color 0.3s;
+}
+
+.ayuda-lista li a:hover {
+    color: rgb(15, 1, 16); /* Rojo más oscuro al hacer hover */
+}
