@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     overflow: hidden;
-    background-color: rgb(75, 64, 64);
+    background-color: rgb(29, 0, 0);
     height: 30px;
 
 }
@@ -30,12 +30,12 @@ header ul li {
     width: 30%;
     text-align: center;
     margin: auto;
-    color: #3a1010;
+    color: #fff;
 }
 
 nav {
     width: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: black;
     overflow: hidden;
 
 }
