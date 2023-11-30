@@ -1,0 +1,25 @@
+/* Estilos para el formulario de registro e inicio de sesión */
+*{
+    font-family: 'Gabarito';
+
+}
+
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+h1 {
+    text-align: center;
+}
