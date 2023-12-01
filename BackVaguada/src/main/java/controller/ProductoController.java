@@ -53,12 +53,17 @@ public class ProductoController {
 		service2.modificarPreparacion(p);
 	}
 	@GetMapping(value="preparacion",produces=MediaType.APPLICATION_JSON_VALUE)
-	public ArrayList<Producto> listarProductos  () {
-		return service1.listarProductos();
+	public ArrayList<Preparacion> listarPreparacion  () {
+		return service2.listarPreparacion();
 	}
-	@GetMapping(value="productos/{id}",produces=MediaType.APPLICATION_JSON_VALUE)
-	public Producto leerProducto(@PathVariable("id") int id) {
-		return service1.leerProducto(id);
+	@GetMapping(value="preparacion/{id}",produces=MediaType.APPLICATION_JSON_VALUE)
+	public Preparacion leerPreparacion(@PathVariable("id") int id) {
+		return service2.leerPreparacion(id);
+	}
+	@DeleteMapping(value="preparacion/{id}")
+	public void eliminarPreparacion(@PathVariable("id") int id) {
+		service1.eliminarProducto(id);
+		
 	}
 	
 }
