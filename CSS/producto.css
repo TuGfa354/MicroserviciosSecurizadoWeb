@@ -313,9 +313,10 @@ section img:hover{
 }
 /*PIE DE PAGINA*/
 .pie-pagina {
+    margin-top: auto;
     bottom: 0;
     width: 100%;
-    background-color: rgb(159, 24, 33);
+    background-color: rgb(165, 21, 19);
 
 }
 
@@ -324,9 +325,11 @@ section img:hover{
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+    justify-items: start;
+
 
 }
 
@@ -348,7 +351,14 @@ section img:hover{
 
 .red-social {
 
-    width: 75%;
+    width: 45%;
+    padding-left: 60px;
+
+}
+
+.red-social h2 {
+    color: white
+
 }
 
 .red-social a {
@@ -357,12 +367,12 @@ section img:hover{
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #fff;
+    color: #ffffff;
     margin-right: 10px;
     background-color: rgba(229, 34, 32, 255);
     text-align: center;
     transition: all 300ms ease;
-    margin-top: 100px;
+    margin-top: 35px;
 
 }
 
@@ -385,4 +395,71 @@ section img:hover{
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+
+
+.corte {
+    hover {
+        transform: scale(1.1);
+    }
+}
+
+/*MENU*/
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+/* Estilo de los elementos del menú */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #351bfa;
+}
+
+/*Esto es para los enlaces del pie*/
+
+.ayuda-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+
+.ayuda-lista li {
+    
+    margin-left: 0; /* Elimina el margen izquierdo */
+    font-size: 20px;
+    color: rgb(48, 19, 165);
+    margin-bottom: 18px; /* Aumenta el espacio entre elementos */
+}
+
+.ayuda-lista li a {
+    text-decoration: none;
+    color: rgb(169, 130, 130);
+    transition: color 0.3s;
+}
+
+.ayuda-lista li a:hover {
+    color: rgb(15, 1, 16); /* Rojo más oscuro al hacer hover */
 }

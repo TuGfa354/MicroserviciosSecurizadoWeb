@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../../CSS/tienda.css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/sobrenosotros.css" />
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpg" href="../../img/General/logo.jpeg" />
     <title>Quesos</title>
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
