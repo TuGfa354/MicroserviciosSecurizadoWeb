@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="sobrenosotros.css">
+<link rel="stylesheet" href="../../CSS/tienda.css">
 
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpg" href="../../img/General/logo.jpeg" />
@@ -12,7 +12,8 @@
 
 <body>
 <?php
-    include "header.php";
+  /*  include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php";*/
+    include "../header.php"
     ?>
     <section>
         <div class="productos">

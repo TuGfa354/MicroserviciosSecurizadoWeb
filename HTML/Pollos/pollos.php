@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <?php include '../header.php'; ?>
+    <?php 
+    include "../header.php" ?>
     <section>
         <div class="productos">
             <div class="populares">
