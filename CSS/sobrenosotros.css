@@ -81,6 +81,8 @@ nav .menu a {
     width: 30px;
     height: 30px;
     /* Otros estilos específicos para el icono del carrito si los necesitas */
+    padding-left: 60px;
+
   
 }
 
@@ -89,7 +91,7 @@ nav .menu a {
     width: 30px;
     height: 30px;
     /* Otros estilos específicos para el icono del usuario si los necesitas */
-    padding-right: 20px;
+    padding-left: 25px;
     
 }
 .usuario-icono:hover {
@@ -166,7 +168,7 @@ nav .menu a {
 }
 
 
-/*CONTENIDO PRINCIPAL*/
+/*!CONTENIDO PRINCIPAL*/
 section img:hover {
     transform: scale(1.03);
 }
@@ -201,7 +203,6 @@ section img {
     margin: auto;
 }
 
-/*?cambios/*/
 
 .listadomicilio .pasos {
     width: 90%;
@@ -319,7 +320,6 @@ section img {
 
 .listaoferta .corte .borde {
     width: 96%;
-    /*! border: 1px gray dotted; */
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -386,7 +386,7 @@ section img {
     width: 100%;
 }
 
-/*PIE DE PÁGINA*/
+/*!PIE DE PÁGINA footer*/
 .pie-pagina {
     margin-top: auto;
     bottom: 0;
