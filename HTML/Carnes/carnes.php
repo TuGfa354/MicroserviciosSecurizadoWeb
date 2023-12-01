@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../../CSS/tienda.css" />
+<link rel="stylesheet" href="sobrenosotros.css">
+
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpg" href="../../img/General/logo.jpeg" />
     <title>Carnicería</title>
@@ -10,7 +11,9 @@
 </head>
 
 <body>
-    <?php include '../header.php'; ?>
+<?php
+    include "header.php";
+    ?>
     <section>
         <div class="productos">
             <div class="populares">

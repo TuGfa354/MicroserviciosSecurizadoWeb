@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
     <!--
 
     <div id="menu">
@@ -30,40 +31,7 @@
     include "header.php";
     ?>
     <section>
-
-
-        <!-- <div class="domicilio">
-            <h2><b>Reparto A Domicilio En Toda La Península</b> </h2>
-            <div class="listadomicilio">
-                <div class="pasos">
-                    <div class="foto">
-                        <img src="../img/logo/vaca1.png" alt="pollo">
-                    </div>
-                    <h3>Carne vacuno</h3>
-                    <p>Criada en pastura libre</p>
-                </div>
-                <div class="pasos">
-                    <div class="foto">
-                        <img src="../img/logo/cabra.png" alt="pollo">
-                    </div>
-                    <h3>Recibir</h3>
-                    <p>Envío en 24 horas</p>
-                </div>
-                <div class="pasos">
-                    <div class="foto">
-                        <img src="../img/logo/cerdito.png" alt="pollo">
-                    </div>
-                    <h3>Cocinar</h3>
-                    <p>Cocínalo a tu gusto</p>
-                </div>
-                <div class="../img/logo/pollo.png">
-                    <div class="foto">
-                        <img src="../img/nosotros/icon04.webp" alt="pollo">
-                    </div>
-                    <h3>Comer</h3>
-                    <p>¡Y a disfrutar!</p>
-                </div>
-            </div> -->
+    
 
         </div>
         <div class="productos">
