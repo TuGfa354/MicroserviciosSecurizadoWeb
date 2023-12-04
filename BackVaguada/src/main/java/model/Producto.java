@@ -1,9 +1,7 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-
-import org.hibernate.mapping.Set;
+import java.util.List;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -16,36 +14,39 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="producto")
+@Table(name = "producto")
 public class Producto {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idProducto;
-	
-	private String nombre;
-	
-	private float precio;
-	
-	private String categoria;
-	
-	private String url;
-	
-	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-	@JoinTable(
-			name = "preparacion_has_producto",
-			joinColumns = @JoinColumn(name = "producto_idproducto"),
-			inverseJoinColumns = @JoinColumn(name ="preparacion_idpreparacion")
-			)
-	private ArrayList<Preparacion> preparacion = new ArrayList<>();
 
-	public Producto(int idProducto, String nombre, float precio, String categoria, String url) {
+	private String nombre;
+
+	private float precio;
+
+	private String categoria;
+
+	private String urlFeed;
+
+	private String urlIndividual;
+
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(name = "preparacion_has_producto",
+	joinColumns = @JoinColumn(name = "producto_idProducto"),
+	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
+	private List<Preparacion> preparaciones;
+
+	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual,
+			List<Preparacion> preparaciones) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
 		this.precio = precio;
 		this.categoria = categoria;
-		this.url = url;
+		this.urlFeed = urlFeed;
+		this.urlIndividual = urlIndividual;
+		this.preparaciones = preparaciones;
 	}
 
 	public Producto() {
@@ -84,13 +85,19 @@ public class Producto {
 		this.categoria = categoria;
 	}
 
-	public ArrayList<Preparacion> getPreparacion() {
-		return preparacion;
+	public List<Preparacion> getPreparacion() {
+		return preparaciones;
 	}
 
 	public void addPreparacion(Preparacion preparacion) {
-		this.preparacion.add(preparacion);
+		this.preparaciones.add(preparacion);
 	}
-	 
-}
 
+	@Override
+	public String toString() {
+		return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + ", categoria="
+				+ categoria + ", urlFeed=" + urlFeed + ", urlIndividual=" + urlIndividual + ", preparaciones="
+				+ preparaciones + "]";
+	}
+
+}

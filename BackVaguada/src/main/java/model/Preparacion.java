@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,14 +20,13 @@ public class Preparacion {
 	
 	private String nombre;
 	
-	@ManyToMany(mappedBy = "preparacion")
-	private ArrayList<Producto> productos = new ArrayList<>();
+	@ManyToMany(mappedBy = "preparaciones")
+	private List<Producto> productos;
 
-	public Preparacion(int idPreparacion, String nombre, ArrayList<Producto> productos) {
+	public Preparacion(int idPreparacion, String nombre) {
 		super();
 		this.idPreparacion = idPreparacion;
 		this.nombre = nombre;
-		this.productos = productos;
 	}
 
 	public Preparacion() {
@@ -49,12 +49,17 @@ public class Preparacion {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<Producto> getProductos() {
+	public List<Producto> getProductos() {
 		return productos;
 	}
 
 	public void setProductos(Producto producto) {
 		this.productos.add(producto);
+	}
+
+	@Override
+	public String toString() {
+		return "Preparacion [idPreparacion=" + idPreparacion + ", nombre=" + nombre + ", productos=" + /*productos +*/ "]";
 	}
 	
 	

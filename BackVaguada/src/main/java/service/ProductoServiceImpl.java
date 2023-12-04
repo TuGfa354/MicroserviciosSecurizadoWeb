@@ -3,11 +3,12 @@ package service;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import dao.PreparacionDao;
 import dao.ProductoDao;
 import model.Producto;
-
+@Service
 public class ProductoServiceImpl implements ProductoService{
 	@Autowired
 	ProductoDao dao;
