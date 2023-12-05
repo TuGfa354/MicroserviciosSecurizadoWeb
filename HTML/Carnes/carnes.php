@@ -18,6 +18,11 @@
   /*  include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php";*/
     include "../header.php"
     ?>
+
+<div class="banner">
+    <p><a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a> → <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnes</a>
+</div>
+
     <section>
         <div class="productos">
             <div class="populares">

@@ -18,7 +18,7 @@
     <section>
         <div class="productos">
             <div class="populares">
-                <h2 id="populares">Productos populares</h2>
+                <h2 id="populares">Pollo 01</h2>
                 <div class="listapopulares">
                     <div class="corte">
                         <div class="borde">

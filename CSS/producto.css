@@ -1,19 +1,29 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     font-family: 'Gabarito';
+
+}
+
+/*CABECERA*/
+
+body {
+    background-color: white;
+    /* background: linear-gradient(45deg, rgb(24, 23, 23), rgb(202, 197, 197)); */
 }
 
 header {
     width: 100%;
     overflow: hidden;
-    background-color: rgb(87,0,0);
-    height: 30px;
+    background-color: rgb(29, 0, 0);
+    height: 100%;
+
 }
 
 header ul {
-    width: 50%;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 header ul li {
@@ -24,25 +34,37 @@ header ul li {
     color: #fff;
 }
 
-nav{
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos al extremo izquierdo y derecho */
+    align-items: center; /* Centra verticalmente los elementos */
     width: 100%;
-    background-color: rgba(229,34,32,255);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
+}
+
+
+nav a img {
+    width:100%;
+}
+
+.logo{
+
+    width: 10%;
+}
+.menu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    width: 50%;
+    padding-right: 400px;
+    align-items: center;
+
 
 }
-nav a img{
-    width: 8%;
-}
-.menu{
-    width: 70%;
-    float: right;
-    overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 30px;
 
-}
+
 nav .menu a {
-    float: left;
+    float: right;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -51,82 +73,129 @@ nav .menu a {
     border-radius: 20px;
     margin-right: 15px;
     transition: transform .2s;
-  }
-  
+}
 
-  .desplegable {
+
+
+.carrito-icono {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    /* Otros estilos específicos para el icono del carrito si los necesitas */
+    padding-left: 60px;
+
+  
+}
+
+.usuario-icono {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    /* Otros estilos específicos para el icono del usuario si los necesitas */
+    padding-left: 25px;
+    
+}
+.usuario-icono:hover {
+    filter: brightness(130%);
+}
+
+
+.menu-usuario {
+    display: none;
+    /* Estilos adicionales para el menú de usuario */
+}
+
+
+.desplegable {
     float: left;
     overflow: hidden;
-  }
- 
-  
+}
 
-  .desplegable .desplegar {
-    font-size: 20px;
+
+
+.desplegable .desplegar {
+    font-size: 200px;
     border: none;
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit; 
+    font-family: inherit;
     margin-right: 15px;
-  }
-  .desplegar a{
-    border-radius: 20px;
+}
+
+.desplegar a {
+    border-radius: 200px;
     transition: transform .2s;
-  }
-  
+    
 
- .menu a:hover{
-    background-color: rgb(159,24,33);
+}
+
+/* Elimina la flecha */
+.desplegable .desplegar i {
+    display: none;
+}
+
+
+.menu a:hover {
+    background-color: rgb(165, 21, 19);
     transform: scale(0.9);
-  }
-  
+    border-radius: 40px; /*radius de los botones*/
 
-  .desplegados {
+}
+
+
+.desplegados {
     display: none;
     position: absolute;
-    background-color: rgba(229,34,32,255);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
+    background-color: black;
+    box-shadow: 0px 0px 3px 3px rgba(121, 108, 108, 0.382);
+    border-radius: 60px; /*radius de el sombreado*/
+}
 
-  .desplegados a {
+
+.desplegados a {
     float: none;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
+}
 
-  .desplegados a:hover {
-    background-color: rgb(159,24,33);
 
-  }
-  
+.desplegados a:hover {
+    background-color: rgb(165, 21, 19);
 
-  .desplegable:hover .desplegados {
-    display:block;
-  }
-  
+}
+
+
+.desplegable:hover .desplegados {
+    display: block;
+}
+
 /*CONTENIDO PRINCIPAL*/
-.banner{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/363/368/20/dark-wood-texture-wallpaper-preview.jpg);
-    padding: 3%;
+
+/**Baner hace referencia a las migas de pan*/
+
+    /* Estilos para el banner */
+ 
+.banner {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-family: 'Gabarito';
 }
-.banner h1{
-    text-align: center;
-    color:rgb(114, 27, 41);
-    font-size: 70px;
+.banner a {
+    color: #333; /* Cambia el color del texto del enlace */
 }
-.banner p{
-    text-align: center;
-    color: rgb(114, 27, 41);
-    font-weight: bold;
-    font-size: 40px;
+
+.banner a:hover {
+    color: #555; /* Cambia el color del texto del enlace al pasar el mouse por encima */
 }
+
+
+
+
 section {
     padding-left: 10%;
     padding-right: 10%;
@@ -148,9 +217,15 @@ section img{
 }
 .img img {
     width: 100%;
-    transition: transform .2s;
+    transition: transform .2s, box-shadow .2s; /* Agregar la propiedad de transición para box-shadow */
     cursor: zoom-in;
 }
+
+.img img:hover {
+    box-shadow: 0 0 5px 5px rgba(254, 47, 47, 0.5); /* Agregar la sombra al hacer hover */
+    transform: scale(1.1); /* Otra propiedad que quieras aplicar al hacer hover */
+}
+
 
 .texto {
     float: left;
@@ -277,6 +352,8 @@ section img:hover{
     width: 100%;
     padding-top:2% ;
     margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+
 
 }
 
@@ -310,10 +387,12 @@ section img:hover{
 .listapopulares .foto img {
     width: 100%;
     margin: 0%;
+    box-shadow: 0px 40px 80px rgb(44, 3, 105); /* Agrega sombra */
+
 }
-/*PIE DE PAGINA*/
+/*!PIE DE PAGINA*/
 .pie-pagina {
-    margin-top: auto;
+    margin-top: 40px;
     bottom: 0;
     width: 100%;
     background-color: rgb(165, 21, 19);
