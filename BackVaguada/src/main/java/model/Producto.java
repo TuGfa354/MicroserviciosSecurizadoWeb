@@ -1,6 +1,6 @@
 package model;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -11,11 +11,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "producto")
-public class Producto {
+@NamedQuery(name="Producto.findAll", query="SELECT p FROM Producto p")
+
+public class Producto implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,14 +34,14 @@ public class Producto {
 
 	private String urlIndividual;
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinTable(name = "preparacion_has_producto",
-	joinColumns = @JoinColumn(name = "producto_idProducto"),
-	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
-	private List<Preparacion> preparaciones;
+//	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+//	@JoinTable(name = "preparacion_has_producto",
+//	joinColumns = @JoinColumn(name = "producto_idProducto"),
+//	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
+//	private List<Preparacion> preparaciones;
 
-	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual,
-			List<Preparacion> preparaciones) {
+	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual
+			) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
@@ -46,7 +49,7 @@ public class Producto {
 		this.categoria = categoria;
 		this.urlFeed = urlFeed;
 		this.urlIndividual = urlIndividual;
-		this.preparaciones = preparaciones;
+//		this.preparaciones = preparaciones;
 	}
 
 	public Producto() {
@@ -85,19 +88,18 @@ public class Producto {
 		this.categoria = categoria;
 	}
 
-	public List<Preparacion> getPreparacion() {
-		return preparaciones;
-	}
-
-	public void addPreparacion(Preparacion preparacion) {
-		this.preparaciones.add(preparacion);
-	}
-
+//	public List<Preparacion> getPreparacion() {
+//		return preparaciones;
+//	}
+//
+//	public void addPreparacion(Preparacion preparacion) {
+//		this.preparaciones.add(preparacion);
+//	}
+//
 	@Override
 	public String toString() {
 		return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + ", categoria="
-				+ categoria + ", urlFeed=" + urlFeed + ", urlIndividual=" + urlIndividual + ", preparaciones="
-				+ preparaciones + "]";
+				+ categoria + ", urlFeed=" + urlFeed + ", urlIndividual=" + urlIndividual +  "]";
 	}
 
 }
