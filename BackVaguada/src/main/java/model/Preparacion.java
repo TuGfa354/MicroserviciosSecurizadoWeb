@@ -59,12 +59,12 @@ public class Preparacion implements Serializable{
 //	public void setProductos(Producto producto) {
 //		this.productos.add(producto);
 //	}
-//
-//	@Override
-//	public String toString() {
-//		return "Preparacion [idPreparacion=" + idPreparacion + ", nombre=" + nombre + ", productos=" + /*productos +*/ "]";
-//	}
-//	
+
+	@Override
+	public String toString() {
+		return "Preparacion [idPreparacion=" + idPreparacion + ", nombre=" + nombre + "]";
+	}
+	
 	
 	
 }

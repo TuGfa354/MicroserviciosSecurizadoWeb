@@ -34,14 +34,14 @@ public class Producto implements Serializable{
 
 	private String urlIndividual;
 
-//	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-//	@JoinTable(name = "preparacion_has_producto",
-//	joinColumns = @JoinColumn(name = "producto_idProducto"),
-//	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
-//	private List<Preparacion> preparaciones;
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(name = "preparacion_has_producto",
+	joinColumns = @JoinColumn(name = "producto_idProducto"),
+	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
+	private List<Preparacion> preparaciones;
 
-	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual
-			) {
+	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual,
+			List<Preparacion>preparaciones) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
@@ -49,7 +49,7 @@ public class Producto implements Serializable{
 		this.categoria = categoria;
 		this.urlFeed = urlFeed;
 		this.urlIndividual = urlIndividual;
-//		this.preparaciones = preparaciones;
+		this.preparaciones = preparaciones;
 	}
 
 	public Producto() {
@@ -88,14 +88,14 @@ public class Producto implements Serializable{
 		this.categoria = categoria;
 	}
 
-//	public List<Preparacion> getPreparacion() {
-//		return preparaciones;
-//	}
-//
-//	public void addPreparacion(Preparacion preparacion) {
-//		this.preparaciones.add(preparacion);
-//	}
-//
+	public List<Preparacion> getPreparacion() {
+		return preparaciones;
+	}
+
+	public void addPreparacion(Preparacion preparacion) {
+		this.preparaciones.add(preparacion);
+	}
+
 	@Override
 	public String toString() {
 		return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + ", categoria="
