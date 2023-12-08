@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             // Process the received JSON data and update HTML elements
             const productListElement = document.getElementById('productList');
-            console.log(data)
+                console.log(data)
             data.forEach(product => {
                 const productDiv = document.createElement('div');
                 productDiv.classList.add('corte', 'borde');
 
                 const productImage = document.createElement('div');
                 productImage.classList.add('foto');
-                productImage.innerHTML = `<img src="../../img/${product.urlFeed}" title="${product.nombre}">`;
+                productImage.innerHTML = `<a href="#"><img src="../../img/${product.urlFeed}" title="${product.nombre}"></a>`;
 
                 const productName = document.createElement('h3');
-                productName.textContent = product.nombre;
+                productName.innerHTML = `<a href="#">${product.nombre}</a>`;
 
                 const productPrice = document.createElement('p');
                 productPrice.textContent = `${product.precio}€`;
