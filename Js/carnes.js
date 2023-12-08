@@ -1,31 +1,55 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Fetch data from the microservice using Ajax
+window.onload = function () {
+    // Fetch data from the microservice
     fetch('http://localhost:9000/productos')
         .then(response => response.json())
         .then(data => {
-            // Process the received JSON data and update HTML elements
-            const productListElement = document.getElementById('productList');
-                console.log(data)
-            data.forEach(product => {
+            // Group products by category
+            const groupedProducts = groupBy(data, 'categoria');
+
+            // Update each section with its respective products
+            updateSection('terneraList', groupedProducts['Ternera']);
+            updateSection('cerdoList', groupedProducts['Cerdo']);
+            updateSection('corderoList', groupedProducts['Cordero']);
+            console.log(data)
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+    // Function to group an array of objects by a specified key
+    function groupBy(array, key) {
+        return array.reduce((result, item) => {
+            (result[item[key]] = result[item[key]] || []).push(item);
+            return result;
+        }, {});
+    }
+
+    // Function to update a section with products
+    function updateSection(sectionId, products) {
+        const section = document.getElementById(sectionId);
+
+        if (section && products) {
+            products.forEach(product => {
                 const productDiv = document.createElement('div');
                 productDiv.classList.add('corte', 'borde');
 
-                const productImage = document.createElement('div');
-                productImage.classList.add('foto');
-                productImage.innerHTML = `<a href="#"><img src="../../img/${product.urlFeed}" title="${product.nombre}"></a>`;
+                // Create product content (image, title, price)
+                const productContent = `
+                    <div class="foto">
+                        <a href="${generateProductLink(product)}">
+                            <img src="../../img/${product.urlFeed}" title="${product.nombre}">
+                        </a>
+                    </div>
+                    <h3>${product.nombre}</h3>
+                    <p>${product.precio.toFixed(2)}€</p>
+                `;
 
-                const productName = document.createElement('h3');
-                productName.innerHTML = `<a href="#">${product.nombre}</a>`;
-
-                const productPrice = document.createElement('p');
-                productPrice.textContent = `${product.precio}€`;
-
-                productDiv.appendChild(productImage);
-                productDiv.appendChild(productName);
-                productDiv.appendChild(productPrice);
-
-                productListElement.appendChild(productDiv);
+                productDiv.innerHTML = productContent;
+                section.appendChild(productDiv);
             });
-        })
-        .catch(error => console.error('Error fetching data:', error));
-});
+        }
+    }
+
+    // Function to generate the product link based on its category and name
+    function generateProductLink(product) {
+        return `${product.categoria.toLowerCase()}/${product.nombre.toLowerCase()}.php`;
+    }
+};

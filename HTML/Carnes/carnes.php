@@ -14,15 +14,33 @@
 
 <body>
     <?php
+    /* include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php"; */
     include "../header.php"
     ?>
     <section>
-        <div class="productos">
-            <div class="populares" id="productList">
-                <!-- Product list will be populated dynamically by JavaScript -->
+        <div class="productos" id="terneraSection">
+            <div class="populares">
+                <h2 id="Ternera">Ternera</h2>
+                <div class="listapopulares" id="terneraList">
+                    <!-- Dynamic content for "Ternera" will be added here by the script -->
+                </div>
             </div>
-            <a class="volver" href="#"><img src="../../img/General/flecha-arriba.png" width="50px"
-                    height="50px"></a>
+        </div>
+        <div class="productos" id="cerdoSection">
+            <div class="populares">
+                <h2 id="Cerdos">Cerdo</h2>
+                <div class="listapopulares" id="cerdoList">
+                    <!-- Dynamic content for "Cerdo" will be added here by the script -->
+                </div>
+            </div>
+        </div>
+        <div class="productos" id="corderoSection">
+            <div class="populares">
+                <h2 id="Corderos">Cordero</h2>
+                <div class="listapopulares" id="corderoList">
+                    <!-- Dynamic content for "Cordero" will be added here by the script -->
+                </div>
+            </div>
         </div>
     </section>
     <?php include '../footer.php'; ?>
