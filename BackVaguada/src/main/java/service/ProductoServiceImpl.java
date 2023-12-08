@@ -1,11 +1,10 @@
 package service;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dao.PreparacionDao;
 import dao.ProductoDao;
 import model.Producto;
 @Service
@@ -23,7 +22,7 @@ public class ProductoServiceImpl implements ProductoService{
 	}
 
 	@Override
-	public ArrayList<Producto> listarProductos() {
+	public List<Producto> listarProductos() {
 		try {
 			Thread.sleep(8000);
 		} catch (InterruptedException e) {
@@ -32,6 +31,16 @@ public class ProductoServiceImpl implements ProductoService{
 		}
 		return dao.listarProductos();
 	}
+//	@Override
+//	public List<Producto> listarCarnes(String categoria) {
+//		try {
+//			Thread.sleep(8000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		return dao.listarCarnes(categoria);
+//	}
 
 	@Override
 	public void modificarProducto(Producto producto) {

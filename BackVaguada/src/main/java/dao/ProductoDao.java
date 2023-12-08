@@ -1,6 +1,6 @@
 package dao;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import model.Producto;
 
@@ -12,8 +12,10 @@ public interface ProductoDao {
 
 	void eliminarProducto(int idProducto);
 
-	ArrayList<Producto> listarProductos();
+	List<Producto> listarProductos();
 
 
 	void modificarProducto(Producto p);
+	
+//	List<Producto> listarCarnes(String categoria);
 }
