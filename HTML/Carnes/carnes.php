@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../../Js/carnes.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,8 @@
     ?>
     <section>
         <div class="productos">
-            <div class="populares">
-                <h2 id="Ternera">Ternera</h2>
+            <div class="populares" id='productList'>
+               <!-- <h2 id="Ternera">Ternera</h2>
                 <div class="listapopulares">
                     <div class="corte">
                         <div class="borde">
@@ -276,7 +277,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 

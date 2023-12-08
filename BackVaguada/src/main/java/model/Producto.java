@@ -68,6 +68,22 @@ public class Producto implements Serializable{
 		return nombre;
 	}
 
+	public String getUrlFeed() {
+		return urlFeed;
+	}
+
+	public void setUrlFeed(String urlFeed) {
+		this.urlFeed = urlFeed;
+	}
+
+	public String getUrlIndividual() {
+		return urlIndividual;
+	}
+
+	public void setUrlIndividual(String urlIndividual) {
+		this.urlIndividual = urlIndividual;
+	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
