@@ -1,22 +1,22 @@
 idproducto,nombre,precio,categoria,urlFeed,urlIndividual
-1,"Asado de tira",8.99,Ternera,Asado.jpg,asado-de-tira.webp
-2,"Morcillo de ternera",12.99,Ternera,morcillo-de-ternera.jpg,morcillo-de-ternera.webp
-3,"Espaldilla de ternera",12.99,Ternera,espaldilla-de-ternera.jpg,espaldilla-de-ternera.webp
-4,"Contra de ternera",12.99,Ternera,contra-de-ternera300x300.jpg,contra-de-ternera.webp
-5,"Babilla de ternera",14.99,Ternera,babilla.jpg,babilla-de-ternera.webp
-6,"ChuletÃ³n de ternera",19.99,Ternera,Chuleton.jpg,chuleton-de-ternera-de-la-sierra-de-guadarram
-7,"PicaÃ±a de ternera",15.99,Ternera,Picana.jpg,picana-de-ternera.webp
-8,"Cadera de ternera",15.99,Ternera,cadera-de-ternera.jpg,cadera-de-ternera.webp
-9,"Aguja de ternera",11.99,Ternera,aguja-de-ternera.jpg,aguja-de-ternera-picar-o-guisar.webp
-10,"Chuleta de lomo",6.8,Cerdo,chuleta-de-lomo-de-cerdo-fresco.jpg,chuleta-de-lomo-de-cerdo-fresco.webp
-11,"Solomillo de cerdo",5.8,Cerdo,solomillo-de-cerdo.jpg,solomillo-de-cerdo.webp
-12,"Chuleta de sajonia",8.9,Cerdo,Chuleta-de-Sajonia-.jpg,Chuleta-de-Sajonia-3.webp
-13,"Chuleta de aguja",5.4,Cerdo,chuletas-de-aguja-de-cerdo.jpg,chuletas-de-aguja-de-cerdo.webp
-14,"Cinta adobada",8.9,Cerdo,cinta-adobada.jpg,cinta-adobada.webp
-15,"Costilla de cerdo",10.99,Cerdo,costilla-fresca-de-cerdo.jpg,costilla-fresca-de-cerdo.webp
-16,"JamÃ³n de cerdo fresco",6.9,Cerdo,jamon-de-cerdo-fresco.jpg,jamon-de-cerdo-fresco.webp
-17,"Panceta fresca",6.99,Cerdo,panceta-fresca.jpg,panceta-fresca.webp
-18,"Cinta de lomo",7.7,Cerdo,cinta-de-lomo-fresca.jpg,cinta-de-lomo-fresca.webp
-19,"Chuletas de cordero",29.99,Cordero,chuletas-de-cordero-lechal-300x300.jpg,chuletas-de-cordero.webp
-20,"Cordero por medios",69.99,Cordero,cordero-lechal50-300x300.jpg,cordero-lechal50.webp
-21,"Cordero lechal",135.99,Cordero,cordero-lechal-300x300.jpg,cordero-lechal.webp
+1,"Asado de tira",8.99,Ternera,carnes/ternera/Asado.jpg,carnes/ternera/asado-de-tira.webp
+2,"Morcillo de ternera",12.99,Ternera,carnes/ternera/morcillo-de-ternera.jpg,carnes/ternera/morcillo-de-ternera.webp
+3,"Espaldilla de ternera",12.99,Ternera,carnes/ternera/espaldilla-de-ternera.jpg,carnes/ternera/espaldilla-de-ternera.webp
+4,"Contra de ternera",12.99,Ternera,carnes/ternera/contra-de-ternera300x300.jpg,carnes/ternera/contra-de-ternera.webp
+5,"Babilla de ternera",14.99,Ternera,carnes/ternera/babilla.jpg,carnes/ternera/babilla-de-ternera.webp
+6,"ChuletÃ³n de ternera",19.99,Ternera,carnes/ternera/Chuleton.jpg,carnes/ternera/chuleton-de-ternera-de-la-sier
+7,"PicaÃ±a de ternera",15.99,Ternera,carnes/ternera/Picana.jpg,carnes/ternera/picana-de-ternera.webp
+8,"Cadera de ternera",15.99,Ternera,carnes/ternera/cadera-de-ternera.jpg,carnes/ternera/cadera-de-ternera.webp
+9,"Aguja de ternera",11.99,Ternera,carnes/ternera/aguja-de-ternera.jpg,carnes/ternera/aguja-de-ternera-picar-o-guisa
+10,"Chuleta de lomo",6.8,Cerdo,carnes/cerdos/chuleta-de-lomo-de-cerdo-fresco,carnes/cerdos/chuleta-de-lomo-de-cerdo-fresco
+11,"Solomillo de cerdo",5.8,Cerdo,carnes/cerdos/solomillo-de-cerdo.jpg,carnes/cerdos/solomillo-de-cerdo.webp
+12,"Chuleta de sajonia",8.9,Cerdo,carnes/cerdos/Chuleta-de-Sajonia-.jpg,carnes/cerdos/Chuleta-de-Sajonia-3.webp
+13,"Chuleta de aguja",5.4,Cerdo,carnes/cerdos/chuletas-de-aguja-de-cerdo.jpg,carnes/cerdos/chuletas-de-aguja-de-cerdo.webp
+14,"Cinta adobada",8.9,Cerdo,carnes/cerdos/cinta-adobada.jpg,carnes/cerdos/cinta-adobada.webp
+15,"Costilla de cerdo",10.99,Cerdo,carnes/cerdos/costilla-fresca-de-cerdo.jpg,carnes/cerdos/costilla-fresca-de-cerdo.webp
+16,"JamÃ³n de cerdo fresco",6.9,Cerdo,carnes/cerdos/jamon-de-cerdo-fresco.jpg,carnes/cerdos/jamon-de-cerdo-fresco.webp
+17,"Panceta fresca",6.99,Cerdo,carnes/cerdos/panceta-fresca.jpg,carnes/cerdos/panceta-fresca.webp
+18,"Cinta de lomo",7.7,Cerdo,carnes/cerdos/cinta-de-lomo-fresca.jpg,carnes/cerdos/cinta-de-lomo-fresca.webp
+19,"Chuletas de cordero",29.99,Cordero,carnes/corderos/chuletas-de-cordero-lechal-30,carnes/corderos/chuletas-de-cordero.webp
+20,"Cordero por medios",69.99,Cordero,carnes/corderos/cordero-lechal50-300x300.jpg,carnes/corderos/cordero-lechal50.webp
+21,"Cordero lechal",135.99,Cordero,carnes/corderos/cordero-lechal-300x300.jpg,carnes/corderos/cordero-lechal.webp
