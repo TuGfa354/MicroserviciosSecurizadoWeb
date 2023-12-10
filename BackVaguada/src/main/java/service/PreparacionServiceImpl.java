@@ -1,6 +1,6 @@
 package service;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +22,7 @@ public class PreparacionServiceImpl implements PreparacionService{
 	}
 
 	@Override
-	public ArrayList<Preparacion> listarPreparacion() {
+	public List<Preparacion> listarPreparacion() {
 		try {
 			Thread.sleep(8000);
 		} catch (InterruptedException e) {

@@ -1,6 +1,6 @@
 package model;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -11,11 +11,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "producto")
-public class Producto {
+@NamedQuery(name="Producto.findAll", query="SELECT p FROM Producto p")
+
+public class Producto implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +41,7 @@ public class Producto {
 	private List<Preparacion> preparaciones;
 
 	public Producto(int idProducto, String nombre, float precio, String categoria, String urlFeed, String urlIndividual,
-			List<Preparacion> preparaciones) {
+			List<Preparacion>preparaciones) {
 		super();
 		this.idProducto = idProducto;
 		this.nombre = nombre;
@@ -63,6 +66,22 @@ public class Producto {
 
 	public String getNombre() {
 		return nombre;
+	}
+
+	public String getUrlFeed() {
+		return urlFeed;
+	}
+
+	public void setUrlFeed(String urlFeed) {
+		this.urlFeed = urlFeed;
+	}
+
+	public String getUrlIndividual() {
+		return urlIndividual;
+	}
+
+	public void setUrlIndividual(String urlIndividual) {
+		this.urlIndividual = urlIndividual;
 	}
 
 	public void setNombre(String nombre) {
@@ -96,8 +115,7 @@ public class Producto {
 	@Override
 	public String toString() {
 		return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + ", categoria="
-				+ categoria + ", urlFeed=" + urlFeed + ", urlIndividual=" + urlIndividual + ", preparaciones="
-				+ preparaciones + "]";
+				+ categoria + ", urlFeed=" + urlFeed + ", urlIndividual=" + urlIndividual +  "]";
 	}
 
 }

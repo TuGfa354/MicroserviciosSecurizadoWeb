@@ -1,13 +1,16 @@
 package service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import model.Producto;
 
 public interface ProductoService {
 	boolean guardarProducto(Producto producto);
-	ArrayList<Producto> listarProductos();
+	List<Producto> listarProductos();
 	void modificarProducto(Producto producto);
 	boolean eliminarProducto(int idProducto);
 	Producto leerProducto(int idProducto);
+//	List<Producto> listarCarnes(String categoria);
+
 }

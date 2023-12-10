@@ -41,7 +41,9 @@ public class ProductoController {
 	}
 	@GetMapping(value="productos/{id}",produces=MediaType.APPLICATION_JSON_VALUE)
 	public Producto leerProducto(@PathVariable("id") int id) {
-		return service1.leerProducto(id);
+		Producto p1 = service1.leerProducto(id);
+		System.out.println(p1.toString());
+		return p1;
 	}
 	
 	@PostMapping(value="productos/guardar",consumes=MediaType.APPLICATION_JSON_VALUE,produces=MediaType.TEXT_PLAIN_VALUE)
