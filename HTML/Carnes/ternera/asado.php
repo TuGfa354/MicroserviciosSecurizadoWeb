@@ -10,44 +10,37 @@
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb23f6d079.js" crossorigin="anonymous"></script>
+    <script src="../../../js/producto.js">
 </head>
 
 <body>
 <?php include '../../header.php'; ?>
     
 <div class="banner">
-    <p>
-        <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
-        <i class="fa-sharp fa-solid fa-house-chimney"></i>
-        </a> > 
-        <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnes</a> > 
-        Pechuga de pollo
-    </p>
-</div>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
+    </div>
 
     <section>
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Charcuteria/pechuga1.jpg" alt="Pechuga de pollo">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Pechuga de pollo</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">8,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">8,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Ternera</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Con hueso</option>
-                        <option value="2">Sin hueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
