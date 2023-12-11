@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <script src="../../../js/producto.js">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <h1>Chuletas de cordero</h1>
         <p>Inicio → Carnicería → Chuletas de cordero</p>
     </div>
-    <section>
+    <section data-product-id="19">
 
         <div class="producto">
             <div class="img">

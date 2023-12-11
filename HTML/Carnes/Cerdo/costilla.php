@@ -15,7 +15,7 @@
     <?php
     include '../../header.php';
     ?>
-    <section>
+    <section data-product-id="15">
 
         <div class="producto">
             <div class="img">
