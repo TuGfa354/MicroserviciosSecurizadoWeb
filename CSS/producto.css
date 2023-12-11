@@ -8,8 +8,12 @@
 /*CABECERA*/
 
 body {
-    background-color: white;
-    /* background: linear-gradient(45deg, rgb(24, 23, 23), rgb(202, 197, 197)); */
+  
+    
+    background-image: url('https://i.pinimg.com/1200x/be/9e/bc/be9ebc5bc0009bce4999709521ec2694.jpg');
+    background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
 }
 
 header {
@@ -217,14 +221,11 @@ section img{
 }
 .img img {
     width: 100%;
-    transition: transform .2s, box-shadow .2s; /* Agregar la propiedad de transición para box-shadow */
-    cursor: zoom-in;
+    border-radius: 20px;
+
 }
 
-.img img:hover {
-    box-shadow: 0 0 5px 5px rgba(254, 47, 47, 0.5); /* Agregar la sombra al hacer hover */
-    transform: scale(1.1); /* Otra propiedad que quieras aplicar al hacer hover */
-}
+
 
 
 .texto {
@@ -333,9 +334,6 @@ label {
     opacity: 1
 }
 
-section img:hover{
-    transform: scale(1.03);
-}
 
 
 .populares h2{
@@ -352,7 +350,11 @@ section img:hover{
     width: 100%;
     padding-top:2% ;
     margin: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    box-shadow: 0px 16px 17px rgba(0, 0, 0, 0.636); /* Agrega sombra */
+    border-radius: 10px;
+    padding-bottom: 20px;
+    background: burlywood;
+
 
 
 }
@@ -362,33 +364,44 @@ section img:hover{
     margin:auto;
     background-color: #fff;
     font-size: 30px;
-    
+    border-radius: 30px;
 }
+
+
+
+
 .listapopulares .corte .borde{
     width: 96%;
-    border: 1px gray dotted;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
+
   
 }
 .listapopulares .corte p{
     margin-top: 6%;
     width: 100%;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
+    
 }
 .listapopulares .corte h3{
     color:rgba(229,34,32,255);
-    font-weight: normal;
+    text-align: center;
+
 
 }
 
 .listapopulares .foto img {
     width: 100%;
     margin: 0%;
-    box-shadow: 0px 40px 80px rgb(44, 3, 105); /* Agrega sombra */
+    border-radius: 100px;
 
+}
+
+
+.listapopulares .foto img:hover {
+    transform: scale(1.015); /* Cambia la escala al pasar el ratón por encima */
 }
 /*!PIE DE PAGINA*/
 .pie-pagina {
@@ -416,7 +429,6 @@ section img:hover{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 

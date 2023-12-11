@@ -54,7 +54,7 @@ nav a img {
 .menu {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    width: 50%;
+    /* width: 50%; */
     padding-right: 400px;
     align-items: center;
 
@@ -78,7 +78,7 @@ nav .menu a {
 
 .carrito-icono {
     cursor: pointer;
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     /* Otros estilos específicos para el icono del carrito si los necesitas */
     padding-left: 60px;
@@ -88,7 +88,7 @@ nav .menu a {
 
 .usuario-icono {
     cursor: pointer;
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     /* Otros estilos específicos para el icono del usuario si los necesitas */
     padding-left: 25px;
@@ -173,14 +173,7 @@ nav .menu a {
 }
 
 
-/*!Sombras*/
-.productos .foto img {
-    transition: box-shadow 4.9s ease-in-out; /* Agrega transición */
-}
 
-.productos .foto:hover img {
-    box-shadow: 0px 40px 80px rgb(254, 0, 0); /* Cambia la sombra en hover */
-}
 
 /*! MIGAS DE PAN*/
 
@@ -199,19 +192,35 @@ nav .menu a {
 
 
 /*!CONTENIDO PRINCIPAL*/
+.custom-carousel{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.carousel-caption h5{
+    font-weight: bold; /* Texto en negrita */
+
+    color: rgb(166, 16, 16);
+}
+.carousel-caption p {
+    
+    color: white; /* Color del texto */
+    padding: 5px; /* Espacio interno alrededor del texto */
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+
 section img:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 section img {
-    transition: transform .2s;
+    transition: transform .1s;
 }
 
 .domicilio {
     width: 100%;
-    overflow: hidden;
     color: rgb 238, 229, 229;
-   /* background-color: #1B1B1B;*/
+    background-color: #61f80f;
 }
 
 .domicilio h2 {
@@ -247,10 +256,14 @@ section img {
     width: 100%;
 }
 
+/*? esta es la clase padre del los prodcutos*/
 .productos {
-    background-color: #12181B;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/895/219/non_2x/chopping-board-seasonings-and-meat-cleaver-on-dark-wooden-background-photo.jpg');
+    background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
     /* background-image: url('../img/General/pasto-transformed.jpeg'); Ruta relativa a la imagen */
-
+    text-align: center; /* Alinea el texto al centro */
     padding-bottom: 5%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,6 +272,12 @@ section img {
 
 }
 
+.productos p {
+    
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
 
 
 
@@ -270,9 +289,6 @@ section .foto img {
     transition: box-shadow 1.9s ease-in-out; /* Agrega transición */
 }
 
-section .foto  :hover {
-    box-shadow: 0px 40px 80px rgb(254, 0, 0); /* Cambia la sombra en hover */
-}
 
 
 .populares h2 {
@@ -302,10 +318,16 @@ section .foto  :hover {
     
     padding-top: 90px;
     margin: 40px;
-
-    background-color: #7c4242;
+    border-radius: 40px;
+    background-color: #ffffff;
     font-size: 20px;
 }
+
+.listapopulares .corte:hover {
+  box-shadow: 0 5px 5px rgba(243, 155, 155, 0.5); /* Sombra blanca al pasar el mouse */
+  transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+}
+
 
 .listapopulares .corte .borde {
     width: 80%;
@@ -313,13 +335,14 @@ section .foto  :hover {
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
+    
 }
 
 .listapopulares .corte p {
     margin-top: 6%;
     width: 100%;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
 }
 
 .listapopulares .corte h3 {
@@ -332,6 +355,7 @@ section .foto  :hover {
     margin: 0%;
    
 }
+
 
 .oferta h2 {
     text-align: center;
@@ -355,15 +379,15 @@ section .foto  :hover {
 }
 
 .listaoferta .corte {
-   padding-top: 90px;
+    padding-top: 90px;
     margin: 40px;
-
-    background-color: #7c4242;
+    border-radius: 40px;
+    background-color: #ffffff;
     font-size: 20px;
 }
 
 .listaoferta .corte .borde {
-    width: 96%;
+    width: 80%;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -430,9 +454,11 @@ section .foto  :hover {
     width: 100%;
 }
 
+
+
+
 /*!PIE DE PÁGINA footer*/
 .pie-pagina {
-    margin-top: 40px;
     bottom: 0;
     width: 100%;
     background-color: rgb(165, 21, 19);
@@ -456,7 +482,7 @@ section .foto  :hover {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 

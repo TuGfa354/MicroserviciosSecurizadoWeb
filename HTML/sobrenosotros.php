@@ -2,49 +2,49 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="../CSS/sobrenosotros.css">
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpg" href="../img/General/logo.jpeg" />
-    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <title>Carnicería La Vaguada</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-    <title>Carnicería La Vaguada</title>
+
+
+
+    <link rel="stylesheet" href="../CSS/sobrenosotros.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Gabarito', sans-serif; /* Aplicar la tipografía Gabarito al cuerpo del documento */
+        }
+    </style>
 
 </head>
+
 <body>
 
-    <!--
-
-    <div id="menu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </div>
-
--->
 
     <?php
     include "header.php";
     ?>
     <section>
-    
+
 
         </div>
         <div class="productos">
+        <?php include 'carrusel.php'; ?>
+
             <div class="populares">
                 <h2>Productos populares</h2>
                 <div class="listapopulares">
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/asado.php"><img src="../img/Carnes/Ternera/Asado.jpg"
-                                        title="asado"></a>
+                                <a href="Carnes/ternera/asado.php"><img src="../img/Charcuteria/pechuga1.jpg" title="Pechuga de pavo"></a>
                             </div>
-                            <h3>Asado</h3>
+                            <h3>Pechuga de pavo</h3>
                             <p>8,99€ </p>
                         </div>
 
@@ -52,8 +52,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/aguja.php"><img src="../img/Carnes/Ternera/aguja-de-ternera.jpg"
-                                        title="Aguja de ternera"></a>
+                                <a href="Carnes/ternera/aguja.php"><img src="../img/Carnes/Ternera/aguja-de-ternera.jpg" title="Aguja de ternera"></a>
 
                             </div>
                             <h3>Aguja de ternera</h3>
@@ -63,8 +62,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Charcuteria/embutidos/chorizo.php"><img src="../img/Charcuteria/chorizo2.jpg"
-                                        title="Chorizo"></a>
+                                <a href="Charcuteria/embutidos/chorizo.php"><img src="../img/Charcuteria/chorizo2.jpg" title="Chorizo"></a>
 
                             </div>
                             <h3>Chorizo</h3>
@@ -80,8 +78,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/babilla.html"> <img src="../img/Carnes/Ternera/Babilla.jpg"
-                                        title="Babilla"></a>
+                                <a href="Carnes/ternera/babilla.html"> <img src="../img/Carnes/Ternera/Babilla.jpg" title="Babilla"></a>
 
                             </div>
                             <h3>Asado</h3>
@@ -92,8 +89,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/cadera.php"><img
-                                        src="../img/Carnes/Ternera/cadera-de-ternera.jpg" title="Cadera de ternera"></a>
+                                <a href="Carnes/ternera/cadera.php"><img src="../img/Carnes/Ternera/cadera-de-ternera.jpg" title="Cadera de ternera"></a>
 
                             </div>
                             <h3>Cadera de ternera</h3>
@@ -103,9 +99,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/Cerdo/solomillo.php"><img
-                                        src="../img/Carnes/Cerdos/solomillo-de-cerdo.jpg"
-                                        title="Solomillo de cerdo"></a>
+                                <a href="Carnes/Cerdo/solomillo.php"><img src="../img/Carnes/Cerdos/solomillo-de-cerdo.jpg" title="Solomillo de cerdo"></a>
 
                             </div>
                             <h3>Solomillo cerdo</h3>
@@ -115,6 +109,16 @@
                 </div>
             </div>
         </div>
+
+       
+
+
+
+      
+
+
+
+</div>
         <div class="calidad">
             <div class="texto">
                 <p class="t1">Carne de la sierra de guadarrama de Madrid </p>

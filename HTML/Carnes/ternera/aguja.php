@@ -18,7 +18,7 @@
     ?>
     <div class="banner">
         <h1>Aguja de ternera</h1>
-        <p>Inicio → Carnes → Aguja de ternera</p>
+        <p>Inicio > Carnes > Aguja de ternera</p>
     </div>
     <section>
 
