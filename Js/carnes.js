@@ -10,7 +10,7 @@ window.onload = function () {
             updateSection('terneraList', groupedProducts['Ternera']);
             updateSection('cerdoList', groupedProducts['Cerdo']);
             updateSection('corderoList', groupedProducts['Cordero']);
-            console.log(data)
+            console.log(data);
         })
         .catch(error => console.error('Error fetching data:', error));
 
@@ -28,22 +28,34 @@ window.onload = function () {
 
         if (section && products) {
             products.forEach(product => {
-                const productDiv = document.createElement('div');
-                productDiv.classList.add('corte', 'borde');
+                const corteDiv = document.createElement('div');
+                corteDiv.classList.add('corte');
 
-                // Create product content (image, title, price)
-                const productContent = `
-                    <div class="foto">
-                        <a href="${generateProductLink(product)}">
-                            <img src="../../img/${product.urlFeed}" title="${product.nombre}">
-                        </a>
-                    </div>
-                    <h3>${product.nombre}</h3>
-                    <p>${product.precio.toFixed(2)}€</p>
-                `;
+                const bordeDiv = document.createElement('div');
+                bordeDiv.classList.add('borde');
+                corteDiv.appendChild(bordeDiv);
 
-                productDiv.innerHTML = productContent;
-                section.appendChild(productDiv);
+                const fotoDiv = document.createElement('div');
+                fotoDiv.classList.add('foto');
+                const imgLink = document.createElement('a');
+                imgLink.href = generateProductLink(product);
+                const img = document.createElement('img');
+                img.src = `../../img/${product.urlFeed}`;
+                img.title = product.nombre;
+                imgLink.appendChild(img);
+                fotoDiv.appendChild(imgLink);
+
+                const title = document.createElement('h3');
+                title.textContent = product.nombre;
+
+                const price = document.createElement('p');
+                price.textContent = `${product.precio.toFixed(2)}€`;
+
+                bordeDiv.appendChild(fotoDiv);
+                bordeDiv.appendChild(title);
+                bordeDiv.appendChild(price);
+
+                section.appendChild(corteDiv);
             });
         }
     }
