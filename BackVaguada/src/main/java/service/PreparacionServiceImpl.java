@@ -4,10 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import dao.PreparacionDao;
 import model.Preparacion;
 @Service
+@Transactional
+
 public class PreparacionServiceImpl implements PreparacionService{
 	@Autowired
 	PreparacionDao dao;

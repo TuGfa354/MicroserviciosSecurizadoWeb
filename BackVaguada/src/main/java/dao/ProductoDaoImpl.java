@@ -1,6 +1,8 @@
 package dao;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -31,7 +33,7 @@ public class ProductoDaoImpl implements ProductoDao {
 	@Override
 	public List<Producto> listarProductos() {
 		
-		return producto.findAll();
+		return  producto.findAll();
 	}
 
 	@Override
@@ -40,7 +42,7 @@ public class ProductoDaoImpl implements ProductoDao {
 
 		
 	}
-//	public List<Producto> listarCarnes(String categoria){
+//	public Set<Producto> listarCarnes(String categoria){
 //		
 //		return producto.findByCategoriaIn(categoria);
 //	}

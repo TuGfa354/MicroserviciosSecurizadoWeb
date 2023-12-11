@@ -1,6 +1,7 @@
 package dao;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -28,9 +29,9 @@ public class PreparacionDaoImpl implements PreparacionDao {
 	}
 
 	@Override
-	public ArrayList<Preparacion> listarPreparacion() {
+	public List<Preparacion> listarPreparacion() {
 		
-		return (ArrayList<Preparacion>) preparacion.findAll();
+		return  preparacion.findAll();
 	}
 
 	@Override

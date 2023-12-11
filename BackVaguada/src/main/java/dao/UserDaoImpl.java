@@ -1,6 +1,7 @@
 package dao;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -28,10 +29,16 @@ public class UserDaoImpl implements UserDao{
 
 	public List<User> listarUsers() {
 
-		return user.findAll();
+		return  user.findAll();
 	}
 
 	public void modificarUser(User p) {
 		user.save(p);
+	}
+
+	@Override
+	public Optional<User> findByUsername(String username) {
+		// TODO Auto-generated method stub
+		return  user.findByUsername(username);
 	}
 }

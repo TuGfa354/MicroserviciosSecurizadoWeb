@@ -1,10 +1,11 @@
 package model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -34,7 +35,7 @@ public class Producto implements Serializable{
 
 	private String urlIndividual;
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@ManyToMany(fetch=FetchType.EAGER)
 	@JoinTable(name = "preparacion_has_producto",
 	joinColumns = @JoinColumn(name = "producto_idProducto"),
 	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))

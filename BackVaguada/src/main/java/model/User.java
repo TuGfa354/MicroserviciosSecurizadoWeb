@@ -1,18 +1,29 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "user")
 @NamedQuery(name="User.findAll", query="SELECT u FROM User u")
-public class User implements Serializable{
+public class User implements Serializable, UserDetails{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,19 +32,25 @@ public class User implements Serializable{
 	private String username;
 	
 	private String password;
-	
-	private String role;
+	@ManyToMany(fetch=FetchType.EAGER)
+	@JoinTable(
+			name="role_has_user",
+			joinColumns = {@JoinColumn(name="user_iduser")},
+			inverseJoinColumns = {@JoinColumn(name="role_idrole")}
+			)
+	private Set<Role> roles;
 
 	public User() {
 		super();
+		this.roles = new HashSet<Role>();
 	}
 
-	public User(int idUser, String username, String password, String role) {
+	public User(int idUser, String username, String password, Set<Role> roles) {
 		super();
 		this.idUser = idUser;
 		this.username = username;
 		this.password = password;
-		this.role = role;
+		this.roles = roles;
 	}
 
 	public int getIdUser() {
@@ -45,7 +62,7 @@ public class User implements Serializable{
 	}
 
 	public String getUsername() {
-		return username;
+		return this.username;
 	}
 
 	public void setUsername(String username) {
@@ -53,24 +70,54 @@ public class User implements Serializable{
 	}
 
 	public String getPassword() {
-		return password;
+		return this.password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public String getRole() {
-		return role;
+	public Set<Role> getRoles() {
+		return roles;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setRoles(Role role) {
+		this.roles.add(role);
 	}
 
 	@Override
 	public String toString() {
-		return "User [idUser=" + idUser + ", username=" + username + ", password=" + password + ", role=" + role + "]";
+		return "User [idUser=" + idUser + ", username=" + username + ", password=" + password + ", role=" + roles + "]";
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return this.roles;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 	

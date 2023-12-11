@@ -1,8 +1,7 @@
 package dao;
 
 import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
 import model.User;
 
@@ -17,4 +16,7 @@ public interface UserDao {
 	
 
 	void modificarUser(User p);
+	
+    Optional<User> findByUsername(String username);
+
 }
