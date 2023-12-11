@@ -192,6 +192,11 @@ nav .menu a {
 
 
 /*!CONTENIDO PRINCIPAL*/
+.carousel {
+    max-width: 650px; /* Ancho máximo del carrusel ajustado a 800px */
+    margin: auto; /* Centrar el carrusel */
+}
+
 .custom-carousel{
     padding-top: 100px;
     padding-bottom: 30px;
@@ -227,6 +232,7 @@ section img {
     text-align: center;
     color: rgb(232, 57, 55);
     font-size: 45px;
+    
 }
 
 .domicilio .listadomicilio {
@@ -295,10 +301,12 @@ section .foto img {
     padding-top: 4%;
 
     text-align: center;
-    color: rgb(232, 57, 55);
     font-size: 70px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+     color : #5b0402;; /* Asegúrate de ajustar el color del texto para que el borde sea visible */
+     text-shadow: 1.5px 1.5px 2.5px rgb(255, 255, 255);
 
+    
 }
 
 .listapopulares {
@@ -359,10 +367,12 @@ section .foto img {
 
 .oferta h2 {
     text-align: center;
-    color: rgb(232, 57, 55);
+    color : #5b0402;
     font-size: 70px;
+    font-weight: bolder;
+
     margin-top: 15%;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1.5px 1.5px 2.5px rgb(255, 255, 255);
 
 }
 
