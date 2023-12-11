@@ -1,5 +1,10 @@
 window.onload = function () {
-    fetch('http://localhost:9000/productos/1')
+    // Obtén el ID del producto desde el atributo de datos del elemento HTML
+    const productId = getProductIdFromHtml();
+
+    // Construye la URL del producto
+    const productUrl = `http://localhost:9000/productos/${productId}`;
+    fetch(productUrl)
         .then(response => response.json())
         .then(productData => {
             // Populate HTML elements with product data
@@ -23,4 +28,8 @@ window.onload = function () {
             productLink.innerHTML = `<a href="../carnes.php">Carnes</a> > ${categoryLink} > ${productCategoryLink}`;
         })
         .catch(error => console.error('Error fetching product data:', error));
+        function getProductIdFromHtml() {
+            const sectionElement = document.querySelector('section');
+            return sectionElement.dataset.productId;
+        }
 };

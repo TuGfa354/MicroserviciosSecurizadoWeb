@@ -25,7 +25,7 @@
         </p>
     </div>
 
-    <section>
+    <section data-product-id="1">
 
     <div class="producto">
             <div class="img">
