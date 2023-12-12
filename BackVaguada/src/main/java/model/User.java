@@ -42,7 +42,7 @@ public class User implements Serializable, UserDetails{
 
 	public User() {
 		super();
-		this.roles = new HashSet<Role>();
+		roles = new HashSet<>();
 	}
 
 	public User(int idUser, String username, String password, Set<Role> roles) {
@@ -53,12 +53,6 @@ public class User implements Serializable, UserDetails{
 		this.roles = roles;
 	}
 	
-//Constructor usado para el controller de registro
-	public User(String username, String password) {
-		super();
-		this.username = username;
-		this.password = password;
-	}
 
 	public int getIdUser() {
 		return idUser;

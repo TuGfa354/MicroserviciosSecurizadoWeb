@@ -12,6 +12,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import dao.RoleJpaSpring;
+import dao.UserJpaSpring;
 import model.LoginDto;
 import model.Role;
 import model.User;
@@ -21,10 +23,10 @@ import model.User;
 public class AuthenticationService {
 
 	@Autowired
-	private UserService userService;
+	private UserJpaSpring userService;
 
 	@Autowired
-	RoleService roleService;
+	RoleJpaSpring roleService;
 
 	@Autowired
 	PasswordEncoder passwordEncoder;
@@ -35,27 +37,29 @@ public class AuthenticationService {
 	@Autowired
 	private TokenService tokenService;
 
-	public boolean registrarUsuario(String username, String password) {
+	public User registrarUsuario(String username, String password) {
 		String encodedPassword = passwordEncoder.encode(password);
 		Role userRole = roleService.findByAuthority("USER").get();
 		Set<Role> authorities = new HashSet<>();
 		authorities.add(userRole);
 		User u1 = new User(0, username, encodedPassword, authorities);
-		return userService.guardarUser(u1);
+		return userService.save(u1);
 	}
 
 	public LoginDto loginUsuario(String username, String password) {
 
-		try {
-			Authentication auth = authenticationManager
-					.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-			
-			String token = tokenService.generateJwt(auth);
-			return new LoginDto(userService.findByUsername(username).get(), token);
-		} catch (AuthenticationException e) {
-			// TODO: handle exception
-			return new LoginDto(null, "");
-		}
+		 try{
+	            Authentication auth = authenticationManager.authenticate(
+	                new UsernamePasswordAuthenticationToken(username, password)
+	            );
+
+	            String token = tokenService.generateJwt(auth);
+
+	            return new LoginDto(userService.findByUsername(username).get(), token);
+
+	        } catch(AuthenticationException e){
+	            return new LoginDto(null, "");
+	        }
 
 		
 	}
