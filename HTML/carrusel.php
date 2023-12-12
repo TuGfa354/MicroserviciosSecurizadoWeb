@@ -15,11 +15,10 @@
 
 
     <style>
-        /* Estilos para el carrusel y sus elementos */
-        .carousel {
-            max-width: 500px; /* Ancho máximo del carrusel */
-            margin: auto; /* Centrar el carrusel */
-        }
+.carousel {
+    max-width: 650px; /* Ancho máximo del carrusel ajustado a 800px */
+    margin: auto; /* Centrar el carrusel */
+}      
 
         body {
             font-family: 'Gabarito', sans-serif;
@@ -29,7 +28,7 @@
     </style>
 </head>
 
-<div class="custom-carousel">
+<div class="custom-carousel ">
 
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">

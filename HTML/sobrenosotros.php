@@ -42,9 +42,9 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/asado.php"><img src="../img/Charcuteria/pechuga1.jpg" title="Pechuga de pavo"></a>
+                                <a href="Carnes/ternera/asado.php"><img src="../img/Carnes/Ternera/Asado.jpg" title="Pechuga de pavo"></a>
                             </div>
-                            <h3>Pechuga de pavo</h3>
+                            <h3>Asado de tira</h3>
                             <p>8,99€ </p>
                         </div>
 
