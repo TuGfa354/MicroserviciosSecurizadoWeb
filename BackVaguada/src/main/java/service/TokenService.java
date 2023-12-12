@@ -9,6 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.jwt.JwtClaimsSet;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
+import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -33,6 +34,6 @@ public class TokenService {
 				.subject(auth.getName())
 				.claim("roles", scope)
 				.build();
-		return null;
+		return jwtEncoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
 	}
 }
