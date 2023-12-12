@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import model.LoginDto;
 import model.User;
 import service.AuthenticationService;
 import service.UserService;
@@ -27,12 +28,16 @@ public class UserController {
 	AuthenticationService auService;
 
 	@GetMapping(value = "/{username}")
-	public Optional<User> listarProductos(@PathVariable("username") String username) {
+	public Optional<User> buscarUsuario(@PathVariable("username") String username) {
 		return service1.findByUsername(username);
 	}
 
 	@PostMapping(value = "/register")
 	public boolean registrarUsuario(@RequestBody User body) {
 		return auService.registrarUsuario(body.getUsername(), body.getPassword());
+	}
+	@PostMapping(value = "/login")
+	public LoginDto iniciarUsuario(@RequestBody User body) {
+		return auService.loginUsuario(body.getUsername(), body.getPassword());
 	}
 }
