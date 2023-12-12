@@ -12,9 +12,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import dao.RoleDaoImpl;
+//import dao.RoleDaoImpl;
 import dao.UserDaoImpl;
-import model.Role;
+//import model.Role;
 import model.User;
 
 @ComponentScan(basePackages = {"controller","dao","service","com.vaguada.main", "seguridad"})
@@ -27,20 +27,20 @@ public class BackVaguadaApplication {
 		SpringApplication.run(BackVaguadaApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner run(RoleDaoImpl roleRepository, UserDaoImpl userRepository, PasswordEncoder passwordEncode){
-		return args ->{
-			if(roleRepository.findByAuthority("ADMIN").isPresent()) return;
-			System.out.println("No se encuentra admimn");
-//			Role adminRole = roleRepository.guardarRole(new Role("ADMIN"));
-//			roleRepository.guardarRole(adminRole);
-//
-//			Set<Role> roles = new HashSet<>();
-//			roles.add(adminRole);
-//
-//			User admin = new User(1, "admin", passwordEncode.encode("password"), roles);
-//
-//			userRepository.guardarUser(admin);
-		};
-	}
+//	@Bean
+//	CommandLineRunner run(RoleDaoImpl roleRepository, UserDaoImpl userRepository, PasswordEncoder passwordEncode){
+//		return args ->{
+//			if(roleRepository.findByAuthority("ADMIN").isPresent()) return;
+//			System.out.println("No se encuentra admimn");
+////			Role adminRole = roleRepository.guardarRole(new Role("ADMIN"));
+////			roleRepository.guardarRole(adminRole);
+////
+////			Set<Role> roles = new HashSet<>();
+////			roles.add(adminRole);
+////
+////			User admin = new User(1, "admin", passwordEncode.encode("password"), roles);
+////
+////			userRepository.guardarUser(admin);
+//		};
+//	}
 }

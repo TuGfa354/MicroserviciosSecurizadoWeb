@@ -11,8 +11,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-
-
 @Configuration
 public class WebSecurityConfiguration {
 
@@ -32,20 +30,20 @@ public class WebSecurityConfiguration {
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
+
 	@Bean
 	public AuthenticationManager authManager(UserDetailsService detailsService) {
 		DaoAuthenticationProvider daoProvider = new DaoAuthenticationProvider();
 		daoProvider.setUserDetailsService(detailsService);
 		return new ProviderManager(daoProvider);
 	}
-    @Bean
-	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-    			return http
-    					.csrf(csrf -> csrf.disable())
-    					.authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
-    					.httpBasic().and()
-    					.build();
 
+	@Bean
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+		return http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> {
+			auth.requestMatchers("/user/**").permitAll();
+			auth.anyRequest().authenticated();
+		}).httpBasic().and().build();
 
 	}
 }

@@ -52,6 +52,13 @@ public class User implements Serializable, UserDetails{
 		this.password = password;
 		this.roles = roles;
 	}
+	
+//Constructor usado para el controller de registro
+	public User(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
 
 	public int getIdUser() {
 		return idUser;
