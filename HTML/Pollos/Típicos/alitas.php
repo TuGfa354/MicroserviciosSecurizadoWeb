@@ -16,32 +16,30 @@
     include '../../header.php';
     ?>
     <div class="banner">
-        <h1>Alitas de pollo</h1>
-        <p>Inicio → Pollería → Alitas de pollo</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
-    <section>
 
-        <div class="producto">
+    <section data-product-id="1">
+
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Pollos/alas-de-pollo-300x300.jpg" alt="Alitas de pollo">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Alitas de pollo</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">4,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">4,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Pollería</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Troceada</option>
-                        <option value="2">Picada</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">

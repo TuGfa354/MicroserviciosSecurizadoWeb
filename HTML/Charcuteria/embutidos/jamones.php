@@ -14,33 +14,31 @@
 
 <?php include '../../header.php'; ?>
 
-    <div class="banner">
-        <h1>Jamon Ibérico Bellotas (Por Piezas)</h1>
-        <p>Inicio → Charcuteria → Jamon Ibérico Bellotas (Por Piezas)</p>
+<div class="banner">
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
-    <section>
 
-        <div class="producto">
+    <section data-product-id="1">
+
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Charcuteria/jamon2.webp" alt="Jamon Ibérico Bellotas (Por Piezas)">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Jamon Ibérico Bellotas (Por Piezas)</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">14,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">303,08€/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Embutido</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Corte fino</option>
-                        <option value="1">Corte grueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">

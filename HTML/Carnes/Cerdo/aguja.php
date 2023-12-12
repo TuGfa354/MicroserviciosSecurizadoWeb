@@ -16,39 +16,40 @@
     <?php
     include '../../header.php';
     ?>
-    <div class="banner">
-        <h1>Aguja de cerdo</h1>
-        <p>Inicio → Carnicería → Aguja de cerdo</p>
+   <div class="banner">
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
+
     <section data-product-id="13">
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Carnes/Cerdos/chuletas-de-aguja-de-cerdo.webp" alt="Aguja de cerdo">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Aguja de cerdo</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">5.40€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">11,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Cerdo</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Fileteado fino</option>
-                        <option value="2">Fileteado grueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
+
+        <h2>HorizontalLine</h2>
+        <hr class="h">
 
 
         <div class="populares">
@@ -62,6 +63,7 @@
                         <h3>Chuletón de ternera</h3>
                         <p>19,99€ </p>
                     </div>
+                  
 
                 </div>
                 <div class="corte">

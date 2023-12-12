@@ -17,32 +17,30 @@
     include '../../header.php';
     ?>
     <div class="banner">
-        <h1>Cordero lechal por medios</h1>
-        <p>Inicio → Carnicería → Cordero lechal por medios</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
+
     <section data-product-id="20">
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Carnes/Corderos/cordero-lechal50.webp" alt="Cordero por medios">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Cordero lechal por medios</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">69,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">23,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Corderos</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Fileteado fino</option>
-                        <option value="2">Fileteado grueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">

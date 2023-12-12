@@ -16,40 +16,37 @@
     <?php
     include '../../header.php';
     ?>
-    <div class="banner">
-        <h1>Chuletas de cordero</h1>
-        <p>Inicio → Carnicería → Chuletas de cordero</p>
+   <div class="banner">
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
+
     <section data-product-id="19">
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Carnes/Corderos/chuletas-de-cordero-lechal.webp" alt="Chuletas de cordero">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Chuletas de cordero</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">29,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">29,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Corderos</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Fileteado fino</option>
-                        <option value="2">Fileteado grueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
-
 
         <div class="populares">
             <h2>Productos relacionados</h2>

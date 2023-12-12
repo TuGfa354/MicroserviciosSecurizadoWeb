@@ -7,10 +7,11 @@
 
 /*CABECERA*/
 
+
+
 body {
   
     
-    background-image: url('https://i.pinimg.com/1200x/be/9e/bc/be9ebc5bc0009bce4999709521ec2694.jpg');
     background-repeat: no-repeat;
   background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
@@ -199,20 +200,36 @@ nav .menu a {
 
 
 
+/*Linea separacion*/
 
-section {
-    padding-left: 10%;
-    padding-right: 10%;
-
+.h{
+    width: 80%;
+    height: 1px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    margin-top: 5%;
 }
+
+h2{
+    color: black;
+    font-family: aller;
+    font-size: 45px;
+}
+
+
+
 
 .producto {
     overflow: hidden;
+    margin-top: 5%;
 }
 
 .img {
     float: left;
-    width: 45%;
+    width: 30%;
+   
 
 }
 section img{
@@ -340,6 +357,8 @@ label {
     text-align: center;
     color: rgb(114, 27, 41);
     font-size: 70px;
+    padding-top: 10%;
+    margin-bottom: 5%;
 }
 .listapopulares {
     grid-template-rows: 1fr;
@@ -347,13 +366,18 @@ label {
     display: grid;
     row-gap: 5%;
     column-gap: 0px;
-    width: 100%;
+    width: 80rem;
     padding-top:2% ;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: auto;
-    box-shadow: 0px 16px 17px rgba(0, 0, 0, 0.636); /* Agrega sombra */
     border-radius: 10px;
-    padding-bottom: 20px;
-    background: burlywood;
+    padding-bottom: 2%;
+    border-bottom: #333333;
+    gap: 7em;
+    background-color: rgb(243, 242, 242);
+    margin-bottom: 10%;
+    box-shadow: #333333;
 
 
 
@@ -405,7 +429,7 @@ label {
 }
 /*!PIE DE PAGINA*/
 .pie-pagina {
-    margin-top: 40px;
+    margin-top: 5%;
     bottom: 0;
     width: 100%;
     background-color: rgb(165, 21, 19);

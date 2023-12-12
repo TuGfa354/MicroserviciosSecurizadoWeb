@@ -21,7 +21,7 @@
         <h1>Aguja de ternera</h1>
         <p>Inicio > Carnes > Aguja de ternera</p>
     </div>
-    <section data-product-id="9">
+    <section data-product-id="9" class="section">
 
         <div class="producto">
             <div class="img">
@@ -50,6 +50,9 @@
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
+
+        
+        <hr class="h">
 
 
         <div class="populares">

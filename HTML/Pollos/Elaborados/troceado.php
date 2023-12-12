@@ -16,40 +16,36 @@
     include '../../header.php';
     ?>
     <div class="banner">
-        <h1>Pollo troceado</h1>
-        <p>Inicio → Pollería → Pollo troceado</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
-    <section>
 
-        <div class="producto">
+    <section data-product-id="1">
+
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Pollos/pollo-troceado-y-marinado-con-una-suave-salsa-de-limon-y-acompanado-de-verduras-deshidratadas-300x300.jpg" alt="Pollo troceado">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Pollo troceado</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">4,50€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">4,50 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Pollería</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Troceada</option>
-                        <option value="2">Picada</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
-
-
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">

@@ -15,32 +15,30 @@
     <?php include '../../header.php'; ?>
     
     <div class="banner">
-        <h1>Cachopo Queso Azul</h1>
-        <p>Inicio → Quesos → Cachopo Queso Azul</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
-    <section>
 
-        <div class="producto">
+    <section data-product-id="1">
+
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Quesos/cachopo2.webp" alt="Cachopo Queso Azul">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Cachopo Queso Azul</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">11,00€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">39,46 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Quesos</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Poco hecho</option>
-                        <option value="2">Al punto</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">

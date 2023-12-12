@@ -4,22 +4,123 @@
 
 }
 
+body{
+    background-color: #431717;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #050101, #431717), repeating-radial-gradient(circle at center center, #050101, #050101, 4px, transparent 8px, transparent 4px);
+    background-blend-mode: multiply;
+}
+
+
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #400202;
+
+}
+
 
 form {
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+.form__input{
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    color: #706c6c;
+
 }
 
-form input[type="text"],
-form input[type="password"],
-form input[type="email"],
-form input[type="submit"] {
-    width: 100%;
-    margin-bottom: 10px;
+
+.form__input:not(:placeholder-shown){
+    color: black;
 }
+
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.container{
+    margin-top: 2em;
+    display: grid;
+    gap: 20px;
+}
+
+.form__group{
+    position: relative;
+    --color: #5757577e;
+}
+
+.form__line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scale(0);
+    transition: transform .4s;
+
+}
+
+.form__input:focus ～ .form__line,
+.form__input:not(:placeholder-shown) ～ .form__line{
+    transform: scale(1);
+}
+
+
+.form__submit{
+    background-color: #400202;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.atras{
+    background-color: #400202;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    height: 4rem;
+    width: 9rem;
+    
+
+}
+
+
+
+
+
+
+
 h1 {
     text-align: center;
 }
+
