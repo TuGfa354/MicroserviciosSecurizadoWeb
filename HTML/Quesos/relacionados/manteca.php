@@ -15,40 +15,36 @@
     <?php include '../../header.php'; ?>
     
     <div class="banner">
-        <h1>Mantequilla Fresca</h1>
-        <p>Inicio → Quesos → Mantequilla Fresca</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
-    <section>
 
-        <div class="producto">
+    <section data-product-id="1">
+
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Quesos/manteca.webp" alt="Mantequilla Fresca">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Mantequilla Fresca</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">3,80€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">12,40 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Quesos</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">250g</option>
-                        <option value="2">1kg</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
-
-
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">

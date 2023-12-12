@@ -10,18 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../../../js/producto.js">
+    <script src="../../../js/producto.js"></script>
+    
 </head>
 
 <body>
+
+
+<div class="lds-ripple"><div></div><div></div></div>
+
     <?php
     /* include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php"; */
     include "../header.php"
     ?>
 
-<div class="banner">
-    <p><a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a> → <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnes</a>
-</div>
+    <div class="banner">
+        <p><a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a> → <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnes</a></p>
+    </div>
 
     <section>
         <div class="productos" id="terneraSection">

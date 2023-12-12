@@ -13,34 +13,55 @@
 
 </head>
 <body>
-<button onclick="window.history.back()">Volver Atrás</button>
+<button onclick="window.history.back()" class="atras">Volver Atrás</button>
+
+<form action="registro_procesar.php" method="post">
+<h1>Registro</h1>
 
   <div class="container">
-    <h1>Registro</h1>
-    <form action="registro_procesar.php" method="post">
-      <label for="username">Nombre de usuario:</label>
-      <input type="text" id="username" name="username" required>
+    <div class="form__group">
+   
+      <input type="text" id="username" name="username" class="form__input" placeholder=" " required>
+      <label for="username" class="form__label">Nombre de usuario:</label>
+      <span class="form__line"></span>
+    </div>
       
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+    <div class="form__group"> 
+    <input type="email" id="email" name="email" class="form__input" placeholder=" " required>
+      <label for="email" class="form__label">Correo electrónico:</label>     
+      <span class="form__line"></span>
+    </div>
       
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required>
+    <div class="form__group">
+      <input type="password" id="password" name="password" class="form__input" placeholder=" " required>
+      <label for="password" class="form__label">Contraseña:</label>
+      <span class="form__line"></span>
+    </div>
+
       <div class="g-recaptcha" data-sitekey="6LcLKCIpAAAAANZlaGoXg8juty-kjjWEsC7Pi5A3
 "></div><br>
-      
-      <button type="submit">Registrarse</button>
-    </form>
+</form>
+      <button type="submit" class="form__submit">Registrarse</button>  
+  </div>
 
-    <h1>Iniciar Sesión</h1>
+
+  
     <form action="login_procesar.php" method="post">
-      <label for="loginUsername">Nombre de usuario:</label>
-      <input type="text" id="loginUsername" name="loginUsername" required>
+    <h1>Iniciar Sesión</h1>
+    <div class="container">
+      <div class="form__group">
+        <input type="text" id="loginUsername" name="loginUsername" class="form__input" placeholder=" " required>
+        <label for="loginUsername" class="form__label">Nombre de usuario:</label>
+        <span class="form__line"></span>
+      </div>
+
+    <div class="form__group">
+      <input type="password" id="loginPassword" name="loginPassword" class="form__input" placeholder=" " required>
+      <label for="loginPassword" class="form__label">Contraseña:</label>
+      <span class="form__line"></span>
+    </div> 
       
-      <label for="loginPassword">Contraseña:</label>
-      <input type="password" id="loginPassword" name="loginPassword" required>
-      
-      <button type="submit">Iniciar Sesión</button>
+      <button type="submit" class="form__submit">Iniciar Sesión</button>
     </form>
   </div>
 

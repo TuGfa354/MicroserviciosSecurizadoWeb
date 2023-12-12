@@ -17,32 +17,30 @@
     include '../../header.php';
     ?>
     <div class="banner">
-        <h1>Cinta adobada de cerdo</h1>
-        <p>Inicio → Carnicería → Cinta adobada de cerdo</p>
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
+
     <section data-product-id="14">
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Carnes/Cerdos/cinta-adobada.webp" alt="Aguja de ternera">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Cinta adobada de cerdo</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">8.90€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">8.90 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Cerdo</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Fileteado fino</option>
-                        <option value="2">Fileteado grueso</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">

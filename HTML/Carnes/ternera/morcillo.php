@@ -14,33 +14,31 @@
 <body>
 
 <?php include '../../header.php'; ?>
-    <div class="banner">
-        <h1>Morcillo de ternera</h1>
-        <p>Inicio → Carnes → Morcillo de ternera</p>
+<div class="banner">
+        <p>
+            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            </a> >
+            <span id="productLink"></span>
+        </p>
     </div>
+
     <section data-product-id="2">
 
-        <div class="producto">
+    <div class="producto">
             <div class="img">
-                <img src="../../../img/Carnes/Ternera/espaldilla-de-ternera.webp" alt="Espaldilla de ternera">
+                <img id="productImage" alt="Pechuga de pollo">
             </div>
             <div class="texto">
-                <p class="titulo">Morcillo de ternera</p>
+                <p class="titulo" id="productTitle"></p>
                 <br>
-                <p class="precio">12,99€</p>
+                <p class="precio" id="productPrice"></p>
                 <br>
-                <p class="kilos">12,99 €/kg</p>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> Ternera</p>
-                <br>
-
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Troceada</option>
-                        <option value="2">pieza entera</option>
-                    </select>
+                    <select name="seleccion" id="seleccion"></select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
