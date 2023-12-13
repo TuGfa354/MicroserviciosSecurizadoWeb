@@ -26,48 +26,9 @@
 
 }
 
-.lds-facebook {
-    display: inline-block;
-    position: fixed;
-    width: 160px;
-    height: 160px;
-    top: 45%;
-    left: 44%;
-   
-  }
-  .lds-facebook div {
-    display: inline-block;
-    position: absolute;
-    left: 16px;
-    width: 32px;
-    background: #fff;
-    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  }
-  .lds-facebook div:nth-child(1) {
-    left: 10%;
-    animation-delay: -0.24s;
-  }
-  .lds-facebook div:nth-child(2) {
-    left: 40%;
-    animation-delay: -0.12s;
-  }
-  .lds-facebook div:nth-child(3) {
-    left: 70%;
-    animation-delay: 0;
-  }
-  @keyframes lds-facebook {
-    0% {
-      top: 16px;
-      height: 128px;
-    }
-    50%, 100% {
-      top: 48px;
-      height: 64px;
-    }
-  }
-  
 
-/*CABECERA*/
+
+/*!CABECERA*/
 
 body {
     background-color: white;
@@ -106,17 +67,15 @@ nav {
 
 
 nav a img {
-    width:100%;
 }
 
 .logo{
+    margin-right: 10%;
 
-    width: 10%;
 }
 .menu {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    /* width: 50%; */
     padding-right: 400px;
     align-items: center;
 
@@ -252,6 +211,52 @@ nav .menu a {
     color: #fffbfb; /* Cambia el color del texto del enlace al pasar el mouse por encima */
 }
 
+
+
+
+
+/*!Cosas de cargas*/
+
+.lds-facebook {
+    display: inline-block;
+    position: fixed;
+    width: 160px;
+    height: 160px;
+    top: 45%;
+    left: 44%;
+   
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 32px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 10%;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 40%;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 70%;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 16px;
+      height: 128px;
+    }
+    50%, 100% {
+      top: 48px;
+      height: 64px;
+    }
+  }
+  
 
 /*!CONTENIDO PRINCIPAL*/
 .carousel {

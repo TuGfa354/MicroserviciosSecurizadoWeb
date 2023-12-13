@@ -22,10 +22,12 @@
 
 
 
-
+    <div class="desplegable">
 
         <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a>
+        </div>
 
+        
         <div class="desplegable">
             <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnicería
                     <i class="fa fa-caret-down"></i>
@@ -52,19 +54,6 @@
             </div>
         </div>
 
-        <div class="desplegable">
-            <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Quesos/quesos.php">Quesos
-                    <i class="fa fa-caret-down"></i>
-                </a>
-
-            </button>
-            <div class="desplegados">
-                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Quesos/quesos.php#Quesos1">Quesos de oveja</a>
-                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Quesos/quesos.php#Quesos2">Elaborados</a>
-                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Quesos/quesos.php#relacionados">Relacionados</a>
-
-            </div>
-        </div>
         <div class="desplegable">
             <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Charcuteria/charcuteria.php">Charcutería <i class="fa fa-caret-down"></i></a>
 
