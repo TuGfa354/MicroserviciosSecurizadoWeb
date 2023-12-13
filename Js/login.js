@@ -27,10 +27,12 @@ function enviarFormulario() {
         .then(data => {
             // Hacer algo con la respuesta del servidor, si es necesario
             var token = data.jwt;
-            console.log(token);
-            localStorage.setItem('token', token);
-            const token2 = localStorage.getItem('token');
-            console.log(token2);
+            var expirationTime = new Date().getTime() + 60 * 60 * 1000;
+            setToken(token, expirationTime);
+            const setToken = (token, expirationTime) => {
+                localStorage.setItem('token', token);
+                localStorage.setItem('tokenExpiration', expirationTime);
+              };
 
         })
         .catch(error => {
