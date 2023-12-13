@@ -8,6 +8,7 @@ body {
     opacity: 1;
     background-image: radial-gradient(circle at center center, #050101, #431717), repeating-radial-gradient(circle at center center, #050101, #050101, 4px, transparent 8px, transparent 4px);
     background-blend-mode: multiply;
+    
 }
 
 .form__input:focus + .form__label,
@@ -15,6 +16,7 @@ body {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     color: #400202;
+    font-family: 'Gabarito';
 }
 
 form {

@@ -12,17 +12,13 @@
     
     width: 12px;
     height: 12px;
-   color: white;
-    
-    
-    
+    color: white;
+    font-family: 'Gabarito';
     position: fixed;
     top: 65%;
     left: 49%;
     margin-top: -25px;
     margin-left: -25px;
-   
-    
 
 }
 
@@ -32,6 +28,7 @@
 
 body {
     background-color: white;
+    font-family: 'Gabarito';
 }
 
 header {

@@ -378,9 +378,15 @@ label {
     background-color: rgb(243, 242, 242);
     margin-bottom: 10%;
     box-shadow: #333333;
+    
 
 
 
+}
+
+.populares{
+    background-image: url(../img/General/dark-wood.jpg);
+    padding-bottom: 5%;
 }
 
 .listapopulares .corte {
