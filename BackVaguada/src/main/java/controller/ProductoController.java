@@ -48,7 +48,7 @@ public class ProductoController {
 		return p1;
 	}
 	
-	@PostMapping(value="/guardar",consumes=MediaType.APPLICATION_JSON_VALUE,produces=MediaType.TEXT_PLAIN_VALUE)
+	@PostMapping(value="/guardar",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public String guardarProducto(@RequestBody Producto p) {		
 		return String.valueOf(service1.guardarProducto(p));
 	}

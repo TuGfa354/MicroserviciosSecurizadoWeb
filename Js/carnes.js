@@ -1,6 +1,6 @@
 window.onload = function () {
     // Fetch data from the microservice
-    fetch('http://localhost:9000/productos')
+    fetch('http://localhost:9000/productos/')
         .then(response => response.json())
         .then(data => {
             // Group products by category
