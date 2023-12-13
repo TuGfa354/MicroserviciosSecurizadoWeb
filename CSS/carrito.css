@@ -1,0 +1,89 @@
+/* Estilos para el formulario del carrito */
+.formulario-carrito {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e0e0e0; /* Agregamos una barra entre productos */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.input-container label {
+    width: 150px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.input-container .form__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-container img {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+/* Añadimos un margen a la barra para mejorar el espaciado */
+.formulario-carrito:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario del carrito */
+#carrito-container {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#carrito-container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilos para el enlace de volver atrás */
+.atras {
+    background-color: #400202;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el total del carrito */
+#total-carrito {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#total-carrito span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff5722; /* Color naranja */
+}
+
+#total-precio {
+    color: #ff5722; /* Color naranja */
+}
