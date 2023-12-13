@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Pechuga de pollo</title>
-    <link rel="icon" type="image/jpg" href="../../../img/General/logo.jpeg" />
+    <link rel="icon" type="image/jpg" href="../../../img/logo/logoCarneNebrija.png" />
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb23f6d079.js" crossorigin="anonymous"></script>
-    <script src="../../../js/producto.js">
+    <script src="../../../js/producto.js"></script>
 </head>
 
 <body>

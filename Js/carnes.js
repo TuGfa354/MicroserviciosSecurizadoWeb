@@ -1,4 +1,5 @@
 window.onload = function () {
+
     let createdElements = []; // Array to keep track of created elements
 
     // Function to group an array of objects by a specified key
@@ -24,83 +25,89 @@ window.onload = function () {
             }
         }
 
-        imagenes.forEach(function(imagen) {
+        imagenes.forEach(function (imagen) {
             imagen.addEventListener("load", imagenesCargadasHandler);
             imagen.addEventListener("error", imagenesCargadasHandler);
         });
-
-       
     }
 
-    // Fetch data from the microservice
-    fetch('http://localhost:9000/productos/')
-        .then(response => response.json())
-        .then(data => {
-            const groupedProducts = groupBy(data, 'categoria');
-            updateSection('terneraList', groupedProducts['Ternera']);
-            updateSection('cerdoList', groupedProducts['Cerdo']);
-            updateSection('corderoList', groupedProducts['Cordero']);
-            console.log(data);
+    const storedToken = localStorage.getItem('token');
+    const storedExpirationTime = localStorage.getItem('tokenExpiration');
+    const isTokenValid = storedToken && storedExpirationTime && new Date().getTime() < storedExpirationTime;
 
-            // After successful fetch, remove the 'DOMContentLoaded' event listener
-            console.log("succesful fetch")
-            var myDiv = document.getElementById("cargandoimg");
-            var myDiv2 = document.getElementById("cargandotxt");
-            console.log(myDiv)
+    if (isTokenValid) {
 
-
-// Check if the div exists before attempting to remove it
-if (myDiv && myDiv2) {
-    // Get the parent node of the div
-    var parentElement = myDiv.parentNode;
-    var parentElement2 = myDiv2.parentNode;
-
-    // Remove the div from its parent
-    parentElement.removeChild(myDiv);
-    parentElement2.removeChild(myDiv2);
-}
-
+        // Fetch data from the microservice with the valid token
+        fetch('http://localhost:9000/productos/', {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
         })
-        .catch(error => console.error('Error fetching data:', error));
+            .then(response => response.json())
+            .then(data => {
+                const groupedProducts = groupBy(data, 'categoria');
+                updateSection('terneraList', groupedProducts['Ternera']);
+                updateSection('cerdoList', groupedProducts['Cerdo']);
+                updateSection('corderoList', groupedProducts['Cordero']);
+                console.log(data);
 
-    // Function to update a section with products
-    function updateSection(sectionId, products) {
-        const section = document.getElementById(sectionId);
+                // After successful fetch, remove the 'DOMContentLoaded' event listener
+                console.log("successful fetch");
+                var myDiv = document.getElementById("cargandoimg");
+                var myDiv2 = document.getElementById("cargandotxt");
 
-        if (section && products) {
-            products.forEach(product => {
-                const corteDiv = document.createElement('div');
-                corteDiv.classList.add('corte');
+                // Check if the div exists before attempting to remove it
+                if (myDiv && myDiv2) {
+                    // Get the parent node of the div
+                    var parentElement = myDiv.parentNode;
+                    var parentElement2 = myDiv2.parentNode;
 
-                const bordeDiv = document.createElement('div');
-                bordeDiv.classList.add('borde');
-                corteDiv.appendChild(bordeDiv);
+                    // Remove the div from its parent
+                    parentElement.removeChild(myDiv);
+                    parentElement2.removeChild(myDiv2);
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
 
-                const fotoDiv = document.createElement('div');
-                fotoDiv.classList.add('foto');
-                const imgLink = document.createElement('a');
-                imgLink.href = generateProductLink(product);
-                const img = document.createElement('img');
-                img.src = `../../img/${product.urlFeed}`;
-                img.title = product.nombre;
-                imgLink.appendChild(img);
-                fotoDiv.appendChild(imgLink);
+        // Function to update a section with products
+        function updateSection(sectionId, products) {
+            const section = document.getElementById(sectionId);
 
-                const title = document.createElement('h3');
-                title.textContent = product.nombre;
+            if (section && products) {
+                products.forEach(product => {
+                    const corteDiv = document.createElement('div');
+                    corteDiv.classList.add('corte');
 
-                const price = document.createElement('p');
-                price.textContent = `${product.precio.toFixed(2)}€`;
+                    const bordeDiv = document.createElement('div');
+                    bordeDiv.classList.add('borde');
+                    corteDiv.appendChild(bordeDiv);
 
-                bordeDiv.appendChild(fotoDiv);
-                bordeDiv.appendChild(title);
-                bordeDiv.appendChild(price);
+                    const fotoDiv = document.createElement('div');
+                    fotoDiv.classList.add('foto');
+                    const imgLink = document.createElement('a');
+                    imgLink.href = generateProductLink(product);
+                    const img = document.createElement('img');
+                    img.src = `../../img/${product.urlFeed}`;
+                    img.title = product.nombre;
+                    imgLink.appendChild(img);
+                    fotoDiv.appendChild(imgLink);
 
-                section.appendChild(corteDiv);
+                    const title = document.createElement('h3');
+                    title.textContent = product.nombre;
 
-                // Keep track of created elements
-                createdElements.push(corteDiv);
-            });
+                    const price = document.createElement('p');
+                    price.textContent = `${product.precio.toFixed(2)}€`;
+
+                    bordeDiv.appendChild(fotoDiv);
+                    bordeDiv.appendChild(title);
+                    bordeDiv.appendChild(price);
+
+                    section.appendChild(corteDiv);
+
+                    // Keep track of created elements
+                    createdElements.push(corteDiv);
+                });
+            }
         }
     }
 

@@ -1,10 +1,17 @@
 window.onload = function () {
     // Obtén el ID del producto desde el atributo de datos del elemento HTML
+    const token = localStorage.getItem('token');
+    console.log(token);
+
     const productId = getProductIdFromHtml();
 
     // Construye la URL del producto
     const productUrl = `http://localhost:9000/productos/${productId}`;
-    fetch(productUrl)
+    fetch(productUrl, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      })
         .then(response => response.json())
         .then(productData => {
             // Populate HTML elements with product data
