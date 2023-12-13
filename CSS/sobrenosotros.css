@@ -66,8 +66,7 @@ nav {
 }
 
 
-nav a img {
-}
+
 
 .logo{
     margin-right: 10%;
@@ -331,7 +330,9 @@ section img {
 
 /*? esta es la clase padre del los prodcutos*/
 .productos {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/000/895/219/non_2x/chopping-board-seasonings-and-meat-cleaver-on-dark-wooden-background-photo.jpg');
+    background-image: url('../img/General/definitiva.jpeg');
+
+    
     background-repeat: no-repeat;
   background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
