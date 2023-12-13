@@ -30,7 +30,6 @@ public class UserController {
 	}
 	@PostMapping(value = "/login", consumes=MediaType.APPLICATION_JSON_VALUE)
 	public LoginDto iniciarUsuario(@RequestBody RegistrationDto body) {
-		System.out.println("funciona");
 		return auService.loginUsuario(body.getUsername(), body.getPassword());
 	}
 }
