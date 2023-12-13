@@ -22,6 +22,32 @@ window.onload = function () {
         }, {});
     }
 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const imagenes = document.querySelectorAll("#terneraSection img, #cerdoSection img, #corderoSection img");
+        const cargandoTexto = document.querySelector(".cargando");
+        const cargandoSimbolo = document.querySelector(".lds-facebook");
+    
+        let imagenesCargadas = 0;
+    
+        // Función para comprobar si todas las imágenes están cargadas
+        function imagenesCargadasHandler() {
+            imagenesCargadas++;
+            if (imagenesCargadas === imagenes.length) {
+                // Todas las imágenes están cargadas, ocultar elementos de carga
+                cargandoTexto.style.display = "none";
+                cargandoSimbolo.style.display = "none";
+            }
+        }
+    
+        // Verificar cada imagen si se ha cargado
+        imagenes.forEach(function(imagen) {
+            imagen.addEventListener("load", imagenesCargadasHandler);
+            imagen.addEventListener("error", imagenesCargadasHandler); // Manejo de errores de carga
+        });
+    });
+    
+
     // Function to update a section with products
     function updateSection(sectionId, products) {
         const section = document.getElementById(sectionId);

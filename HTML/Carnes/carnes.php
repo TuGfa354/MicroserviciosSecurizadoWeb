@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../../../js/producto.js"></script>
+    <script src="../../js/carnes.js"></script>
     
 </head>
 
 <body>
 
 
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="lds-facebook"><div></div><div></div><div></div></div>
+<div class="cargando"><p >cargando...</p></div>
 
     <?php
     /* include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php"; */
