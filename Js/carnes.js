@@ -31,18 +31,20 @@ window.onload = function () {
         });
     }
 
-    const storedToken = localStorage.getItem('token');
-    const storedExpirationTime = localStorage.getItem('tokenExpiration');
-    const isTokenValid = storedToken && storedExpirationTime && new Date().getTime() < storedExpirationTime;
+    // const storedToken = localStorage.getItem('token');
+    // const storedExpirationTime = localStorage.getItem('tokenExpiration');
+    // const isTokenValid = storedToken && storedExpirationTime && new Date().getTime() < storedExpirationTime;
 
-    if (isTokenValid) {
+    // if (isTokenValid) {
 
         // Fetch data from the microservice with the valid token
-        fetch('http://localhost:9000/productos/', {
-            headers: {
-                'Authorization': `Bearer ${token}`,
-            },
-        })
+        fetch('http://localhost:9000/productos/'
+        // , {
+        //     headers: {
+        //         'Authorization': `Bearer ${token}`,
+        //     },
+        // }
+        )
             .then(response => response.json())
             .then(data => {
                 const groupedProducts = groupBy(data, 'categoria');
@@ -67,7 +69,7 @@ window.onload = function () {
                     parentElement2.removeChild(myDiv2);
                 }
             })
-            .catch(error => console.error('Error fetching data:', error));
+            .catch(alert("No se ha podido conectar con la base de datos"));
 
         // Function to update a section with products
         function updateSection(sectionId, products) {
@@ -109,7 +111,7 @@ window.onload = function () {
                 });
             }
         }
-    }
+    // }
 
     // Function to generate the product link based on its category and name
     function generateProductLink(product) {
