@@ -1,18 +1,5 @@
 window.onload = function () {
-    // Fetch data from the microservice
-    fetch('http://localhost:9000/productos/')
-        .then(response => response.json())
-        .then(data => {
-            // Group products by category
-            const groupedProducts = groupBy(data, 'categoria');
-
-            // Update each section with its respective products
-            updateSection('terneraList', groupedProducts['Ternera']);
-            updateSection('cerdoList', groupedProducts['Cerdo']);
-            updateSection('corderoList', groupedProducts['Cordero']);
-            console.log(data);
-        })
-        .catch(error => console.error('Error fetching data:', error));
+    let createdElements = []; // Array to keep track of created elements
 
     // Function to group an array of objects by a specified key
     function groupBy(array, key) {
@@ -22,32 +9,59 @@ window.onload = function () {
         }, {});
     }
 
-
-    document.addEventListener("DOMContentLoaded", function() {
+    // Function to handle loaded images
+    function handleLoadedImages() {
         const imagenes = document.querySelectorAll("#terneraSection img, #cerdoSection img, #corderoSection img");
         const cargandoTexto = document.querySelector(".cargando");
         const cargandoSimbolo = document.querySelector(".lds-facebook");
-        console.log(imagenes);
-    
         let imagenesCargadas = 0;
-    
-        // Función para comprobar si todas las imágenes están cargadas
+
         function imagenesCargadasHandler() {
             imagenesCargadas++;
             if (imagenesCargadas === imagenes.length) {
-                // Todas las imágenes están cargadas, ocultar elementos de carga
                 cargandoTexto.style.display = "none";
                 cargandoSimbolo.style.display = "none";
             }
         }
-    
-        // Verificar cada imagen si se ha cargado
+
         imagenes.forEach(function(imagen) {
             imagen.addEventListener("load", imagenesCargadasHandler);
-            imagen.addEventListener("error", imagenesCargadasHandler); // Manejo de errores de carga
+            imagen.addEventListener("error", imagenesCargadasHandler);
         });
-    });
-    
+
+       
+    }
+
+    // Fetch data from the microservice
+    fetch('http://localhost:9000/productos/')
+        .then(response => response.json())
+        .then(data => {
+            const groupedProducts = groupBy(data, 'categoria');
+            updateSection('terneraList', groupedProducts['Ternera']);
+            updateSection('cerdoList', groupedProducts['Cerdo']);
+            updateSection('corderoList', groupedProducts['Cordero']);
+            console.log(data);
+
+            // After successful fetch, remove the 'DOMContentLoaded' event listener
+            console.log("succesful fetch")
+            var myDiv = document.getElementById("cargandoimg");
+            var myDiv2 = document.getElementById("cargandotxt");
+            console.log(myDiv)
+
+
+// Check if the div exists before attempting to remove it
+if (myDiv && myDiv2) {
+    // Get the parent node of the div
+    var parentElement = myDiv.parentNode;
+    var parentElement2 = myDiv2.parentNode;
+
+    // Remove the div from its parent
+    parentElement.removeChild(myDiv);
+    parentElement2.removeChild(myDiv2);
+}
+
+        })
+        .catch(error => console.error('Error fetching data:', error));
 
     // Function to update a section with products
     function updateSection(sectionId, products) {
@@ -83,6 +97,9 @@ window.onload = function () {
                 bordeDiv.appendChild(price);
 
                 section.appendChild(corteDiv);
+
+                // Keep track of created elements
+                createdElements.push(corteDiv);
             });
         }
     }
@@ -91,4 +108,7 @@ window.onload = function () {
     function generateProductLink(product) {
         return `${product.categoria.toLowerCase()}/${product.nombre.toLowerCase()}.php`;
     }
+
+    // Attach the handleLoadedImages function to the DOMContentLoaded event
+    document.addEventListener("DOMContentLoaded", handleLoadedImages);
 };

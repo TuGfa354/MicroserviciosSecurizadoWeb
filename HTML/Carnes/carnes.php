@@ -17,8 +17,8 @@
 <body>
 
 
-<div class="lds-facebook"><div></div><div></div><div></div></div>
-<div class="cargando"><p >cargando...</p></div>
+<div class="lds-facebook" id="cargandoimg"><div></div><div></div><div></div></div>
+<div class="cargando" id="cargandotxt"><p >cargando...</p></div>
 
     <?php
     /* include "/vaguadaInterfaces/VaguadaInterfaces/HTML/header.php"; */
