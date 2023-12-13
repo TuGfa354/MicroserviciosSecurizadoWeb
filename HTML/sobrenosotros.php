@@ -42,7 +42,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/asado.php"><img src="../img/Carnes/Ternera/Asado.jpg" title="Pechuga de pavo"></a>
+                                <a href="Carnes/ternera/Asado de tira.php"><img src="../img/Carnes/Ternera/Asado.jpg" title="Pechuga de pavo"></a>
                             </div>
                             <h3>Asado de tira</h3>
                             <p>8,99€ </p>
@@ -52,7 +52,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/aguja.php"><img src="../img/Carnes/Ternera/aguja-de-ternera.jpg" title="Aguja de ternera"></a>
+                                <a href="Carnes/ternera/Aguja de ternera.php"><img src="../img/Carnes/Ternera/aguja-de-ternera.jpg" title="Aguja de ternera"></a>
 
                             </div>
                             <h3>Aguja de ternera</h3>
@@ -78,7 +78,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/babilla.html"> <img src="../img/Carnes/Ternera/Babilla.jpg" title="Babilla"></a>
+                                <a href="Carnes/ternera/Babilla de ternera.php"> <img src="../img/Carnes/Ternera/Babilla.jpg" title="Babilla"></a>
 
                             </div>
                             <h3>Asado</h3>
@@ -89,7 +89,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/ternera/cadera.php"><img src="../img/Carnes/Ternera/cadera-de-ternera.jpg" title="Cadera de ternera"></a>
+                                <a href="Carnes/ternera/Cadera de ternera.php"><img src="../img/Carnes/Ternera/cadera-de-ternera.jpg" title="Cadera de ternera"></a>
 
                             </div>
                             <h3>Cadera de ternera</h3>
@@ -99,7 +99,7 @@
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="Carnes/Cerdo/solomillo.php"><img src="../img/Carnes/Cerdos/solomillo-de-cerdo.jpg" title="Solomillo de cerdo"></a>
+                                <a href="Carnes/Cerdo/Solomillo de cerdo.php"><img src="../img/Carnes/Cerdos/solomillo-de-cerdo.jpg" title="Solomillo de cerdo"></a>
 
                             </div>
                             <h3>Solomillo cerdo</h3>
