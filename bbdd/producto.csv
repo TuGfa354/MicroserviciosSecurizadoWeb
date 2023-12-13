@@ -4,19 +4,19 @@ idproducto,nombre,precio,categoria,urlFeed,urlIndividual
 3,"Espaldilla de ternera",12.99,Ternera,carnes/ternera/espaldilla-de-ternera.jpg,carnes/ternera/espaldilla-de-ternera.webp
 4,"Contra de ternera",12.99,Ternera,carnes/ternera/contra-de-ternera300x300.jpg,carnes/ternera/contra-de-ternera.webp
 5,"Babilla de ternera",14.99,Ternera,carnes/ternera/babilla.jpg,carnes/ternera/babilla-de-ternera.webp
-6,"ChuletÃ³n de ternera",19.99,Ternera,carnes/ternera/Chuleton.jpg,carnes/ternera/chuleton-de-ternera-de-la-sier
-7,"PicaÃ±a de ternera",15.99,Ternera,carnes/ternera/Picana.jpg,carnes/ternera/picana-de-ternera.webp
+6,"Chuletón de ternera",19.99,Ternera,carnes/ternera/Chuleton.jpg,carnes/ternera/chuleton-de-ternera-de-la-sier
+7,"Picaña de ternera",15.99,Ternera,carnes/ternera/Picana.jpg,carnes/ternera/picana-de-ternera.webp
 8,"Cadera de ternera",15.99,Ternera,carnes/ternera/cadera-de-ternera.jpg,carnes/ternera/cadera-de-ternera.webp
 9,"Aguja de ternera",11.99,Ternera,carnes/ternera/aguja-de-ternera.jpg,carnes/ternera/aguja-de-ternera-picar-o-guisa
-10,"Chuleta de lomo",6.8,Cerdo,carnes/cerdos/chuleta-de-lomo-de-cerdo-fresco,carnes/cerdos/chuleta-de-lomo-de-cerdo-fresco
+10,"Chuleta de lomo",6.8,Cerdo,carnes/cerdos/chuleta-de-lomo-de-cerdo.jpg,carnes/cerdos/chuleta-de-lomo-de-cerdo.webp
 11,"Solomillo de cerdo",5.8,Cerdo,carnes/cerdos/solomillo-de-cerdo.jpg,carnes/cerdos/solomillo-de-cerdo.webp
 12,"Chuleta de sajonia",8.9,Cerdo,carnes/cerdos/Chuleta-de-Sajonia-.jpg,carnes/cerdos/Chuleta-de-Sajonia-3.webp
 13,"Chuleta de aguja",5.4,Cerdo,carnes/cerdos/chuletas-de-aguja-de-cerdo.jpg,carnes/cerdos/chuletas-de-aguja-de-cerdo.webp
 14,"Cinta adobada",8.9,Cerdo,carnes/cerdos/cinta-adobada.jpg,carnes/cerdos/cinta-adobada.webp
 15,"Costilla de cerdo",10.99,Cerdo,carnes/cerdos/costilla-fresca-de-cerdo.jpg,carnes/cerdos/costilla-fresca-de-cerdo.webp
-16,"JamÃ³n de cerdo fresco",6.9,Cerdo,carnes/cerdos/jamon-de-cerdo-fresco.jpg,carnes/cerdos/jamon-de-cerdo-fresco.webp
+16,"Jamón de cerdo fresco",6.9,Cerdo,carnes/cerdos/jamon-de-cerdo-fresco.jpg,carnes/cerdos/jamon-de-cerdo-fresco.webp
 17,"Panceta fresca",6.99,Cerdo,carnes/cerdos/panceta-fresca.jpg,carnes/cerdos/panceta-fresca.webp
 18,"Cinta de lomo",7.7,Cerdo,carnes/cerdos/cinta-de-lomo-fresca.jpg,carnes/cerdos/cinta-de-lomo-fresca.webp
-19,"Chuletas de cordero",29.99,Cordero,carnes/corderos/chuletas-de-cordero-lechal-30,carnes/corderos/chuletas-de-cordero.webp
+19,"Chuletas de cordero",29.99,Cordero,carnes/corderos/chuletas-cordero-300x300.jpg,carnes/corderos/chuletas-de-cordero.webp
 20,"Cordero por medios",69.99,Cordero,carnes/corderos/cordero-lechal50-300x300.jpg,carnes/corderos/cordero-lechal50.webp
 21,"Cordero lechal",135.99,Cordero,carnes/corderos/cordero-lechal-300x300.jpg,carnes/corderos/cordero-lechal.webp
