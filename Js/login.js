@@ -23,13 +23,17 @@ function enviarFormulario() {
         },
         body: JSON.stringify(formData)
     })
-    .then(response => response.json())
-    .then(data => {
-        // Hacer algo con la respuesta del servidor, si es necesario
-        var token = data.jwt;
-        console.log(token);
-    })
-    .catch(error => {
-        console.error('Error al enviar los datos:', error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            // Hacer algo con la respuesta del servidor, si es necesario
+            var token = data.jwt;
+            console.log(token);
+            localStorage.setItem('token', token);
+            const token2 = localStorage.getItem('token');
+            console.log(token2);
+
+        })
+        .catch(error => {
+            console.error('Error al enviar los datos:', error);
+        });
 }

@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="../img/General/logo.jpeg" />
+    <link rel="icon" type="image/jpg" href="../img/logo/logoCarneNebrija.png" />
     <title>Carnicería La Vaguada</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

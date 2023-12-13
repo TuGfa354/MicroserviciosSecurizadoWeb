@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../../CSS/sobrenosotros.css" />
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="../../img/General/logo.jpeg" />
+    <link rel="icon" type="image/jpg" href="../../img/logo/logoCarneNebrija.png" />
     <title>Charcutería</title>
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
