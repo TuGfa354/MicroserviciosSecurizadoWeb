@@ -31,7 +31,7 @@ import utilidades.RSAKeyProperties;
 @Configuration
 public class WebSecurityConfiguration {
 	private final RSAKeyProperties keys;
-	
+
 	public WebSecurityConfiguration(RSAKeyProperties keys) {
 		this.keys = keys;
 	}
@@ -51,13 +51,16 @@ public class WebSecurityConfiguration {
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		return http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> {
+		http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> {
+			auth.requestMatchers("/productos/**").hasRole("USER");
 			auth.requestMatchers("/**").permitAll();
-			auth.requestMatchers("/carrito/**").hasRole("USER");
+			
 //			auth.requestMatchers("/admin/**").hasRole("ADMIN");
 			auth.anyRequest().authenticated();
-		}).oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt).sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-		.build();
+		});
+		http.oauth2ResourceServer().jwt().jwtAuthenticationConverter(jwtAuthenticationConverter());
+		http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+		return http.build();
 
 	}
 
@@ -73,14 +76,17 @@ public class WebSecurityConfiguration {
 		JWKSource<SecurityContext> jwks = new ImmutableJWKSet<>(new JWKSet(jwk));
 		return new NimbusJwtEncoder(jwks);
 	}
+
 	@Bean
 	public JwtAuthenticationConverter jwtAuthenticationConverter() {
 		JwtGrantedAuthoritiesConverter jwtGrantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
-		jwtGrantedAuthoritiesConverter.setAuthoritiesClaimName("roles");//referencia a TokenService
-		jwtGrantedAuthoritiesConverter.setAuthorityPrefix("ROLE_");//Spring busca los roles con el formato role_admin para desencriptar
+		jwtGrantedAuthoritiesConverter.setAuthoritiesClaimName("roles");// referencia a TokenService
+		jwtGrantedAuthoritiesConverter.setAuthorityPrefix("ROLE_");// Spring busca los roles con el formato role_admin
+																	// para desencriptar
 		JwtAuthenticationConverter jwtConverter = new JwtAuthenticationConverter();
-		jwtConverter.setJwtGrantedAuthoritiesConverter(jwtGrantedAuthoritiesConverter);//genera un nuevo token con los roles bien hechos
+		jwtConverter.setJwtGrantedAuthoritiesConverter(jwtGrantedAuthoritiesConverter);// genera un nuevo token con los
+																						// roles bien hechos
 		return jwtConverter;
 	}
-	
+
 }
