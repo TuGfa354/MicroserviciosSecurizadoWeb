@@ -52,9 +52,8 @@ public class WebSecurityConfiguration {
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> {
-			auth.requestMatchers("/productos/**").hasRole("USER");
+			auth.requestMatchers("/carrito/**").hasRole("USER");
 			auth.requestMatchers("/**").permitAll();
-			
 //			auth.requestMatchers("/admin/**").hasRole("ADMIN");
 			auth.anyRequest().authenticated();
 		});
