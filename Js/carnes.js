@@ -27,6 +27,7 @@ window.onload = function () {
         const imagenes = document.querySelectorAll("#terneraSection img, #cerdoSection img, #corderoSection img");
         const cargandoTexto = document.querySelector(".cargando");
         const cargandoSimbolo = document.querySelector(".lds-facebook");
+        console.log(imagenes);
     
         let imagenesCargadas = 0;
     
