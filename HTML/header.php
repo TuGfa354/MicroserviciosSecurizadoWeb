@@ -22,12 +22,12 @@
 
 
 
-    <div class="desplegable">
+        <div class="desplegable">
 
-        <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a>
+            <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a>
         </div>
 
-        
+
         <div class="desplegable">
             <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnicería
                     <i class="fa fa-caret-down"></i>
@@ -69,7 +69,7 @@
 
 
 
-        <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/carritoIcono.png" alt="" class="carrito-icono"  onclick="">
+        <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/carritoIcono.png" alt="" class="carrito-icono" onclick="carritoMenu()" title="Carrito">
         <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/usuarioIcono.png" alt="" class="usuario-icono" onclick="usuarioMenu()" title="Iniciar sesión o registrarse">
 
 

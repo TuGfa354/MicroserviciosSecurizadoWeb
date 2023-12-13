@@ -1,26 +1,21 @@
-/* Estilos para el formulario de registro e inicio de sesión */
-*{
+/* Estilos adicionales para el formulario de registro e inicio de sesión */
+* {
     font-family: 'Gabarito';
-
 }
 
-body{
+body {
     background-color: #431717;
     opacity: 1;
     background-image: radial-gradient(circle at center center, #050101, #431717), repeating-radial-gradient(circle at center center, #050101, #050101, 4px, transparent 8px, transparent 4px);
     background-blend-mode: multiply;
 }
 
-
-
 .form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label{
+.form__input:not(:placeholder-shown) + .form__label {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     color: #400202;
-
 }
-
 
 form {
     margin: auto;
@@ -33,7 +28,8 @@ form {
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
 }
-.form__input{
+
+.form__input {
     width: 100%;
     background: none;
     font-size: 1rem;
@@ -42,15 +38,13 @@ form {
     outline: none;
     border-bottom: 1px solid var(--color);
     color: #706c6c;
-
 }
 
-
-.form__input:not(:placeholder-shown){
+.form__input:not(:placeholder-shown) {
     color: black;
 }
 
-.form__label{
+.form__label {
     color: var(--color);
     cursor: pointer;
     position: absolute;
@@ -60,18 +54,18 @@ form {
     transition: transform .5s, color .3s;
 }
 
-.container{
+.container {
     margin-top: 2em;
     display: grid;
     gap: 20px;
 }
 
-.form__group{
+.form__group {
     position: relative;
     --color: #5757577e;
 }
 
-.form__line{
+.form__line {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,16 +73,14 @@ form {
     height: 1px;
     transform: scale(0);
     transition: transform .4s;
-
 }
 
 .form__input:focus ～ .form__line,
-.form__input:not(:placeholder-shown) ～ .form__line{
+.form__input:not(:placeholder-shown) ～ .form__line {
     transform: scale(1);
 }
 
-
-.form__submit{
+.form__submit {
     background-color: #400202;
     color: white;
     font-weight: 300;
@@ -99,7 +91,7 @@ form {
     cursor: pointer;
 }
 
-.atras{
+.atras {
     background-color: #400202;
     color: white;
     font-weight: 300;
@@ -110,21 +102,61 @@ form {
     cursor: pointer;
     height: 4rem;
     width: 9rem;
-    
-
 }
 
-.link__registrar{
+.link__registrar {
     color: black;
 }
-
-
-
-
-
-
 
 h1 {
     text-align: center;
 }
 
+/* Estilos para el formulario del carrito */
+#carrito-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#carrito {
+    margin-bottom: 10px;
+}
+
+#total-carrito {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#total-precio {
+    margin-left: 10px;
+    color: #e44d26; /* Color naranja (puedes cambiarlo según tu diseño) */
+}
+
+.formulario-carrito {
+    margin-top: 20px;
+    display: flex;
+}
+
+form {
+    background-color: white;
+    width: 70%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    margin-right: 20px;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+#imagen-preview {
+    max-width: 100%;
+    border-radius: 10px;
+}

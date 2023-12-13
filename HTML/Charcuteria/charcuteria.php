@@ -10,6 +10,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+.listapopulares {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    row-gap: 5%;
+
+    width: 80%;
+    padding-top: 9%;
+    margin: auto;
+}
+
+.listaoferta {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    row-gap: 5%;
+
+    width: 80%;
+    padding-top: 9%;
+    margin: auto;
+
+}
+
+</style>
+
 </head>
 
 <body>
@@ -65,17 +94,7 @@
                             <p>2,99€ </p>
                         </div>
                     </div>
-                    <div class="corte">
-                        <div class="borde">
-                            <div class="foto">
-                                <a href="embutidos/pechuga.php"><img src="../../img/Charcuteria/pechuga2.jpg"
-                                        title="Pechuga Pavo"></a>
-
-                            </div>
-                            <h3>Pechuga Pavo </h3>
-                            <p>5,50€ </p>
-                        </div>
-                    </div>
+                
                     <div class="corte">
                         <div class="borde">
                             <div class="foto">
@@ -249,8 +268,20 @@
                                 <h3>Preparado para Fabada</h3>
                                 <p>11,00€ </p>
                             </div>
-
                         </div>
+
+                        <div class="corte">
+                        <div class="borde">
+                            <div class="foto">
+                                <a href="embutidos/pechuga.php"><img src="../../img/Charcuteria/pechuga2.jpg"
+                                        title="Pechuga Pavo"></a>
+
+                            </div>
+                            <h3>Pechuga Pavo </h3>
+                            <p>5,50€ </p>
+                        </div>
+                    </div>
+
                         <div class="corte">
                             <div class="borde">
                                 <div class="foto">
