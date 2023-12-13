@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Panceta de cerdo</title>
+    <title>Jamón de cerdo</title>
     <link rel="icon" type="image/jpg" href="../../../img/logo/logoCarneNebrija.png" />
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
     <script src="../../../js/producto.js"></script>
 </head>
 
 <body>
+
     <?php
     include '../../header.php';
     ?>
-    
     <div class="banner">
         <p>
             <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
@@ -25,7 +26,7 @@
         </p>
     </div>
 
-    <section data-product-id="17">
+    <section data-product-id="16">
 
     <div class="producto">
             <div class="img">

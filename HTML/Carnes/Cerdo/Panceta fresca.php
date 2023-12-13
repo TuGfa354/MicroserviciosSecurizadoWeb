@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chuletas de cordero</title>
+    <title>Panceta de cerdo</title>
     <link rel="icon" type="image/jpg" href="../../../img/logo/logoCarneNebrija.png" />
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
     <script src="../../../js/producto.js"></script>
 </head>
 
 <body>
-
     <?php
     include '../../header.php';
     ?>
-   <div class="banner">
+    
+    <div class="banner">
         <p>
             <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
                 <i class="fa-sharp fa-solid fa-house-chimney"></i>
@@ -25,7 +26,7 @@
         </p>
     </div>
 
-    <section data-product-id="19">
+    <section data-product-id="17">
 
     <div class="producto">
             <div class="img">
@@ -48,33 +49,33 @@
             </div>
         </div>
 
+
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../cordero/corderomedios.php"><img src="../../../img/Carnes/Corderos/cordero-lechal50-300x300.jpg"
-                                    title="Chuletón"></a>
+                            <a href="../Ternera/chuleton.php"><img src="../../../img/Carnes/Ternera/Chuleton.jpg" title="Chuletón"></a>
                         </div>
-                        <h3>Cordero lechal por medios</h3>
-                        <p>69,99€ </p>
+                        <h3>Chuletón de ternera</h3>
+                        <p>19,99€ </p>
                     </div>
 
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../cordero/cordero.php"><img src="../../../img/Carnes/Corderos/cordero-lechal-300x300.jpg" title="Cordero lechal"></a>
+                            <a href="../Ternera/picaña.php"><img src="../../../img/Carnes/Ternera/Picana.jpg" title="Picaña"></a>
                         </div>
-                        <h3>Cordero lechal</h3>
-                        <p>135,99€ </p>
+                        <h3>Picaña</h3>
+                        <p>15,99€ </p>
                     </div>
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../ternera/babilla.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="Babilla"></a>
+                            <a href="../ternera/babilla.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="asado"></a>
                         </div>
                         <h3>Babilla de ternera</h3>
                         <p>14,99€ </p>
@@ -83,7 +84,8 @@
             </div>
 
         </div>
-        <a class="volver" href="#"><img src="../../../img/General/flecha-arriba.png" width="50px" height="50px"></a>
+        <a class="volver" href="#"><img src="../../../img/General/flecha-arriba.png" width="50px"
+            height="50px"></a>
     </section>
     <?php
     include '../../footer.php';
