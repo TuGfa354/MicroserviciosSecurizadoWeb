@@ -28,16 +28,8 @@ public class ProductoController {
 	ProductoService service1;
 	
 	
-//	@GetMapping(value="pruebas")
-//	public void pruebas(){
-//		Preparacion p1 = service2.leerPreparacion(1);
-//		System.out.println(p1.toString()); 
-//		Producto p2 = service1.leerProducto(1);
-//		System.out.println(p2.toString());
-//		System.out.println(service1.listarProductos());
-//	}
+
 	
-	//PREGUNTAR AL CÁRCELES POR QUÉ DA UN ERROR AL DEVOLVER
 	@GetMapping(value="/",produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Producto> listarProductos() {
 		return service1.listarProductos();
