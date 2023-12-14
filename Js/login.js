@@ -27,16 +27,19 @@ function enviarFormulario() {
         .then(data => {
             if(data){
                 alert("Login exitoso")
+                console.log(data)
             }
             // Hacer algo con la respuesta del servidor, si es necesario
             var token = data.jwt;
             var expirationTime = new Date().getTime() + 60 * 60 * 1000;
+            var role = data.user.roles[0].authority
             // Move the setToken declaration above its usage
-            const setToken = (token, expirationTime) => {
+            const setToken = (token, expirationTime, role) => {
                 localStorage.setItem('token', token);
                 localStorage.setItem('tokenExpiration', expirationTime);
+                localStorage.setItem('role', role)
             };
-            setToken(token, expirationTime);
+            setToken(token, expirationTime, role);
         })
         .catch(error => {
             console.error('Error al enviar los datos:', error);
