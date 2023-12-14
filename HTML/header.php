@@ -34,12 +34,15 @@
                 </a>
 
             </button>
+
             <div class="desplegados">
                 <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php#Corderos">Cordero</a>
                 <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php#Cerdos">Cerdo</a>
                 <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php#Ternera">Ternera</a>
             </div>
         </div>
+
+
         <div class="desplegable">
             <button class="desplegar">
                 <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Pollos/pollos.php">Pollería
@@ -55,7 +58,7 @@
         </div>
 
         <div class="desplegable">
-            <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Charcuteria/charcuteria.php">Charcutería <i class="fa fa-caret-down"></i></a>
+            <button class="desplegar"><a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/Charcuteria/charcuteria.php">Charcutería</a>
 
             </button>
             <div class="desplegados">
@@ -70,9 +73,23 @@
 
 
         <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/carritoIcono.png" alt="" class="carrito-icono" onclick="carritoMenu()" title="Carrito">
-        <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/usuarioIcono.png" alt="" class="usuario-icono" onclick="usuarioMenu()" title="Iniciar sesión o registrarse">
 
 
-    </div>
+
+        <div class="desplegable">
+            <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/usuarioIcono.png" alt="" class="usuario-icono" title="Iniciar sesión o registrarse">
+
+            <br>
+            </button>
+            <div class="desplegados">
+
+                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/User.php" id="login">Iniciar sesión</a>
+                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/register.php" id="registrarse">Registrarse</a>
+
+
+            </div>
+
+        </div>
+
 
 </nav>
