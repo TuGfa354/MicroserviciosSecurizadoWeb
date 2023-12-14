@@ -25,7 +25,7 @@
             width: 80%;
             padding-top: 9%;
             margin: auto;
-            padding-bottom: 8%;
+            padding-bottom: 16%;
         }
 
         .listaoferta {
