@@ -2,7 +2,7 @@ window.onload = function () {
     // Obtén el ID del producto desde el atributo de datos del elemento HTML
     // const token = localStorage.getItem('token');
     // console.log(token);
-
+    console.log("se ejecuta el script")
     const productId = getProductIdFromHtml();
 
     // Construye la URL del producto
