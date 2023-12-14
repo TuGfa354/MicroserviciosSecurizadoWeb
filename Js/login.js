@@ -25,6 +25,9 @@ function enviarFormulario() {
     })
         .then(response => response.json())
         .then(data => {
+            if(data){
+                alert("Login exitoso")
+            }
             // Hacer algo con la respuesta del servidor, si es necesario
             var token = data.jwt;
             var expirationTime = new Date().getTime() + 60 * 60 * 1000;
