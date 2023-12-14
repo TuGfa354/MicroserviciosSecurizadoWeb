@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Pollo troceado</title>
-    <link rel="icon" type="image/jpg" href="../../../img/logo/logoCarneNebrija.png" />
+    <link rel="icon" type="image/jpg" href="../../../img/General/logo.jpeg" />
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,36 +16,40 @@
     include '../../header.php';
     ?>
     <div class="banner">
-        <p>
-            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
-                <i class="fa-sharp fa-solid fa-house-chimney"></i>
-            </a> >
-            <span id="productLink"></span>
-        </p>
+        <h1>Pollo troceado</h1>
+        <p>Inicio → Pollería → Pollo troceado</p>
     </div>
+    <section>
 
-    <section data-product-id="1">
-
-    <div class="producto">
+        <div class="producto">
             <div class="img">
-                <img id="productImage" alt="Pechuga de pollo">
+                <img src="../../../img/Pollos/pollo-troceado-y-marinado-con-una-suave-salsa-de-limon-y-acompanado-de-verduras-deshidratadas-300x300.jpg" alt="Pollo troceado">
             </div>
             <div class="texto">
-                <p class="titulo" id="productTitle"></p>
+                <p class="titulo">Pollo troceado</p>
                 <br>
-                <p class="precio" id="productPrice"></p>
+                <p class="precio">4,50€</p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
+                <p class="kilos">4,50 €/kg</p>
                 <br>
+                <p class="categoria"><b>Categoría :</b> Pollería</p>
+                <br>
+
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion"></select>
+                    <select name="seleccion" id="seleccion">
+                        <option value="0">Elige una opción</option>
+                        <option value="1">Troceada</option>
+                        <option value="2">Picada</option>
+                    </select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
                 <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
+
+
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
