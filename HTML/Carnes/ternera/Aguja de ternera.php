@@ -47,7 +47,7 @@
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
-                <button class="carrito">Añadir al carrito</button>
+                <div class="boton"><button class="btn">Añadir al carrito</button></div>
             </div>
         </div>
 
