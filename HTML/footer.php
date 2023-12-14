@@ -23,7 +23,7 @@
         </div>
         <div class="enlaces-pie">               
             <ul class="ayuda-lista">
-                <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Sobre nosotros</a></li>
                 <li><a href="/envios">Envíos</a></li>
                 <li><a href="/devoluciones">Devoluciones</a></li>
                 <li><a href="/terminos-del-servicio">Términos del servicio</a></li>
