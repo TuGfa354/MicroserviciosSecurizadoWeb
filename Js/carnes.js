@@ -69,7 +69,10 @@ window.onload = function () {
                     parentElement2.removeChild(myDiv2);
                 }
             })
-            .catch(alert("No se ha podido conectar con la base de datos"));
+            .catch(error => {
+                console.error('Error al enviar los datos:', error);
+                alert("Error base de datos")
+            });
 
         // Function to update a section with products
         function updateSection(sectionId, products) {

@@ -36,7 +36,10 @@ window.onload = function () {
             const productCategoryLink = `<a href="Carnes/${productData.categoria}/${productData.nombre.toLowerCase()}.php">${productData.nombre}</a>`;
             productLink.innerHTML = `<a href="../carnes.php">Carnes</a> > ${categoryLink} > ${productCategoryLink}`;
         })
-        .catch(alert("No se ha podido conectar con la base de datos"));
+        .catch(error => {
+            console.error('Error al enviar los datos:', error);
+            alert("Error base de datos")
+        });
         function getProductIdFromHtml() {
             const sectionElement = document.querySelector('section');
             return sectionElement.dataset.productId;
