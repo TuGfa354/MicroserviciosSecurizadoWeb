@@ -25,6 +25,7 @@
             width: 80%;
             padding-top: 9%;
             margin: auto;
+            padding-bottom: 8%;
         }
 
         .listaoferta {
@@ -36,8 +37,10 @@
             width: 80%;
             padding-top: 9%;
             margin: auto;
-
         }
+            
+
+
     </style>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
