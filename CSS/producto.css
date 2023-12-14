@@ -5,6 +5,50 @@
 
 }
 
+
+
+/*CARRITO*/
+
+
+.carrito{
+    background:#4e0a0a;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin-left: 70%;
+    margin-top: 5%;
+  }
+  .carrito:hover{
+    background:#fff;
+    color:#4e0a0a;
+  }
+  .carrito:before,.carrito:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #4e0a0a;
+    transition:400ms ease all;
+  }
+  .carrito:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .carrito:hover:before,.carrito:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
 /*CABECERA*/
 
 
@@ -203,14 +247,16 @@ nav .menu a {
 /*Linea separacion*/
 
 .h{
-    width: 80%;
+    width: 47%;
     height: 1px;
     border: 0 none;
     margin-right: auto;
-    margin-left: auto;
     background-color: black;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 5%;
 }
+
 
 h2{
     color: black;
@@ -224,6 +270,7 @@ h2{
 .producto {
     overflow: hidden;
     margin-top: 5%;
+    margin-left: 15%;
 }
 
 .img {
@@ -359,6 +406,7 @@ label {
     font-size: 70px;
     padding-top: 10%;
     margin-bottom: 5%;
+    text-shadow: 1.5px 1.5px 2.5px rgb(255, 255, 255);
 }
 .listapopulares {
     grid-template-rows: 1fr;
