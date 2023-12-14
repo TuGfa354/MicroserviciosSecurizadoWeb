@@ -423,7 +423,7 @@ label {
     padding-bottom: 2%;
     border-bottom: #333333;
     gap: 7em;
-    background-color: rgb(243, 242, 242);
+    /* background-color: rgb(243, 242, 242); */
     margin-bottom: 10%;
     box-shadow: #333333;
     
@@ -450,6 +450,7 @@ label {
 
 .listapopulares .corte .borde{
     width: 96%;
+    
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
