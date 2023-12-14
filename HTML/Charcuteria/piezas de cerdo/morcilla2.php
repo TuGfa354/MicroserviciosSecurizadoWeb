@@ -4,46 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Morcilla de Arroz</title>
-    <link rel="icon" type="image/jpg" href="../../../img/logo/logoCarneNebrija.png" />
+    <link rel="icon" type="image/jpg" href="../../../img/General/logo.jpeg" />
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <?php include '../../header.php'; ?>
 
-<div class="banner">
-        <p>
-            <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
-                <i class="fa-sharp fa-solid fa-house-chimney"></i>
-            </a> >
-            <span id="productLink"></span>
-        </p>
+    <div class="banner">
+        <h1>Morcilla de Arroz</h1>
+        <p>Inicio → Charcuteria → Morcilla de Arroz</p>
     </div>
+    <section>
 
-    <section data-product-id="1">
-
-    <div class="producto">
+        <div class="producto">
             <div class="img">
-                <img id="productImage" alt="Pechuga de pollo">
+                <img src="../../../img/Charcuteria/morcilla2.webp" alt="Morcilla de Arroz">
             </div>
             <div class="texto">
-                <p class="titulo" id="productTitle"></p>
+                <p class="titulo">Morcilla de Arroz</p>
                 <br>
-                <p class="precio" id="productPrice"></p>
+                <p class="precio">7,80€</p>
                 <br>
-                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
+                <p class="kilos">26,36€/kg</p>
                 <br>
+                <p class="categoria"><b>Categoría :</b> Piezas de cerdo</p>
+                <br>
+
                 <div class="select">
                     <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion"></select>
+                    <select name="seleccion" id="seleccion">
+                        <option value="0">Elige una opción</option>
+                        <option value="1">Enteros</option>
+                        <option value="1">Por partes</option>
+                    </select>
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
-                <button class="boton">Añadir al carrito</button>
+               <button class="boton">Añadir al carrito</button>
             </div>
         </div>
 
