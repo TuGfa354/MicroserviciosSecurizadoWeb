@@ -63,7 +63,7 @@
                         <div class="foto">
                             <a href="chuleton.php"><img src="../../../img/Carnes/Ternera/Chuleton.jpg" title="Chuletón"></a>
                         </div>
-                        <h3>Chuletón de ternera</h3>
+                        <h3>Chuletón</h3>
                         <p>19,99€ </p>
                     </div>
 
