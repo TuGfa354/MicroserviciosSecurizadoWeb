@@ -93,23 +93,20 @@ nav {
 }
 
 
-nav a img {
-    width:100%;
-}
+
 
 .logo{
+    margin-right: 10%;
 
-    width: 10%;
 }
 .menu {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    width: 50%;
     padding-right: 400px;
     align-items: center;
 
-
 }
+
 
 
 nav .menu a {
@@ -128,7 +125,7 @@ nav .menu a {
 
 .carrito-icono {
     cursor: pointer;
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     /* Otros estilos específicos para el icono del carrito si los necesitas */
     padding-left: 60px;
@@ -138,7 +135,7 @@ nav .menu a {
 
 .usuario-icono {
     cursor: pointer;
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     /* Otros estilos específicos para el icono del usuario si los necesitas */
     padding-left: 25px;
@@ -221,6 +218,9 @@ nav .menu a {
 .desplegable:hover .desplegados {
     display: block;
 }
+
+
+
 
 /*CONTENIDO PRINCIPAL*/
 
@@ -414,7 +414,6 @@ label {
     display: grid;
     row-gap: 5%;
     column-gap: 0px;
-    width: 80rem;
     padding-top:2% ;
     padding-left: 5%;
     padding-right: 5%;
