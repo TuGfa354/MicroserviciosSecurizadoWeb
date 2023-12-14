@@ -59,27 +59,26 @@
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../Ternera/chuleton.php"><img src="../../../img/Carnes/Ternera/Chuleton.jpg" title="Chuletón"></a>
+                            <a href="chuleton de ternera.php"><img src="../../../img/Carnes/Ternera/Chuleton.jpg" title="Chuletón"></a>
                         </div>
                         <h3>Chuletón de ternera</h3>
                         <p>19,99€ </p>
                     </div>
-                  
 
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../ternera/babilla.php"><img src="../../../img/Carnes/Ternera/Picana.jpg" title="Picaña"></a>
+                            <a href="picaña de ternera.php"><img src="../../../img/Carnes/Ternera/Picana.jpg" title="Picaña"></a>
                         </div>
-                        <h3>Picaña</h3>
+                        <h3>Picaña de ternera</h3>
                         <p>15,99€ </p>
                     </div>
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="../Ternera/babilla.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="asado"></a>
+                            <a href="babilla de ternera.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="asado"></a>
                         </div>
                         <h3>Babilla de ternera</h3>
                         <p>14,99€ </p>
