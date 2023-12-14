@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <button onclick="window.history.back()" class="atras">Volver Atrás</button>
+<button onclick="window.location.href = 'sobrenosotros.php'" class="atras">Volver Atrás</button>
 
   <form action="#" method="post">
     <h1>Registro</h1>
