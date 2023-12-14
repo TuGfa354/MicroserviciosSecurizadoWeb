@@ -77,10 +77,10 @@
     <?php include '../header.php'; ?>
     <section>
         <div class="productos">
-        <div>
+            <div class="grid1">
                 <i class="bi bi-grid" id="grid4"></i> <!-- Este es el icono de grid -->
             </div>
-            <div>
+            <div class="grid2">
                 <i class="bi bi-grid-3x2" id="grid3"></i> <!-- Este es el segundo icono -->
             </div>
             <div class="populares">

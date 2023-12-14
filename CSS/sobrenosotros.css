@@ -4,9 +4,50 @@
     font-family: 'Gabarito';
 
 }
+.grid1 {
+    position: fixed;
+    top: 40%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: right;
+    z-index: 9999;
+   cursor: pointer;
+    height: 9.5%;
+    width: 4%;
+}
+.grid2 {
+    position: fixed;
+    top: 55%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: right;
+    z-index: 9999;
+    cursor: pointer;
+    height: 9.5%;
+    width: 4%;
+
+    
+    
+}
+
+#grid3 {
+    font-size: 5em; /* Tamaño deseado */
+ color: white;
+    margin-bottom: 50%;
+    
+}
+#grid4 {
+    font-size: 5em; /* Tamaño deseado */
+   color: white;
+    margin-bottom: 50%;
+}
 
 
 
+
+
+
+/*CARGANDO PÁGINA*/
 .cargando{
     display: inline-block;
     
