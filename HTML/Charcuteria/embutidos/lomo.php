@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -45,3 +47,42 @@
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
+                <button class="boton">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+        <div class="populares">
+            <h2>Productos relacionados</h2>
+            <div class="listapopulares">
+                <div class="corte">
+                    <div class="borde">
+                        <div class="foto">
+                            <a href="../piezas de cerdo/pincho.php"><img src="../../../img/Charcuteria/pincho.jpg" title="Pincho Moruno"></a>
+                        </div>
+                        <h3>Pincho Moruno</h3>
+                        <p>9,90€ </p>
+                    </div>
+
+                </div>
+                <div class="corte">
+                    <div class="borde">
+                        <div class="foto">
+                            <a href="../embutidos/chorizo.php"><img src="../../../img/Charcuteria/chorizo2.jpg" title="Chorizo"></a>
+                        </div>
+                        <h3>Chorizo</h3>
+                        <p>7,80€ </p>
+                    </div>
+                </div>
+                <div class="corte">
+                    <div class="borde">
+                        <div class="foto">
+                            <a href="../piezas de cerdo/costillas.php"><img src="../../../img/Charcuteria/costillas1.jpg" title="Costillas Cerdo Ibérico"></a>
+                        </div>
+                        <h3>Costillas Cerdo Ibérico</h3>
+                        <p>29,99€ </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
