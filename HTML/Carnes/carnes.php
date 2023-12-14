@@ -25,9 +25,7 @@
     include "../header.php"
     ?>
 
-    <div class="banner">
-        <p><a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">Inicio</a> → <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/Carnes/carnes.php">Carnes</a></p>
-    </div>
+  
 
     <section>
         <div class="productos" id="terneraSection">

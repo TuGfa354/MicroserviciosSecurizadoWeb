@@ -1,9 +1,29 @@
+* {
+    font-family: 'Gabarito';
+}
+
+body{
+    background-color: #431717;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #0501018c, #cc1e1e),
+        repeating-radial-gradient(circle at center center, #050101, #050101, 4px, transparent 8px, transparent 4px);
+    background-blend-mode: multiply;
+}
+
+#carrito-padre h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff; /* Color blanco */
+}
+    
+    
+
 /* Estilos para el formulario del carrito */
 .formulario-carrito {
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #e0e0e0; /* Agregamos una barra entre productos */
+    flex-direction: column; /* Cambiamos de 'wrap' a 'column' para que crezca a lo ancho */
+    border-bottom: 5px solid #ab9e9e; /* Agregamos una barra entre productos */
 }
 
 .input-container {
@@ -19,8 +39,12 @@
     font-weight: bold;
 }
 
-.input-container .form__input {
+.input-container .form__input-container {
     flex: 1;
+}
+
+.input-container .form__input {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -32,7 +56,9 @@
     max-width: 100px;
     max-height: 100px;
     border-radius: 4px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
 }
 
 /* Añadimos un margen a la barra para mejorar el espaciado */
@@ -59,17 +85,15 @@
 /* Estilos para el enlace de volver atrás */
 .atras {
     background-color: #400202;
-    color: #fff;
+    color: white;
     font-weight: 300;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: .8em 0;
     border: none;
     border-radius: .5em;
     cursor: pointer;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 4rem;
+    width: 9rem;
 }
 
 /* Estilos para el total del carrito */
