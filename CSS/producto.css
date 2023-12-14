@@ -165,7 +165,6 @@ nav .menu a {
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit;
     margin-right: 15px;
 }
 
@@ -260,7 +259,6 @@ nav .menu a {
 
 h2{
     color: black;
-    font-family: aller;
     font-size: 45px;
 }
 

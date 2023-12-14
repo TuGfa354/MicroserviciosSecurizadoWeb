@@ -243,7 +243,7 @@
                         <div class="corte">
                         <div class="borde">
                             <div class="foto">
-                                <a href="eladorados/entero.php"><img src="../../img/Pollos/pollo-entero-300x300.jpg" 
+                                <a href="elaborados/entero.php"><img src="../../img/Pollos/pollo-entero-300x300.jpg" 
                                     title="Pollo entero"></a>     
                             </div>
                             <h3>Pollo entero</h3>
