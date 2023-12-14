@@ -75,21 +75,15 @@
         <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/carritoIcono.png" alt="" class="carrito-icono" onclick="carritoMenu()" title="Carrito">
 
 
-
-        <div class="desplegable">
-            <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/usuarioIcono.png" alt="" class="usuario-icono" title="Iniciar sesión o registrarse">
-
-            <br>
-            </button>
-            <div class="desplegados">
-
-                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/User.php" id="login">Iniciar sesión</a>
-                <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/register.php" id="registrarse">Registrarse</a>
+        <div class="desplegable usuario">
+    <img src="/vaguadaInterfaces/VaguadaInterfaces/img/iconos/usuarioIcono.png" alt="" class="usuario-icono" title="Iniciar sesión o registrarse">
+    <div class="desplegados usuario">
+        <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/User.php" id="login">Iniciar sesión</a>
+        <a href="/vaguadaInterfaces/VaguadaInterfaces/HTML/register.php" id="registrarse">Registrarse</a>
+    </div>
+</div>
 
 
-            </div>
-
-        </div>
 
 
 </nav>
