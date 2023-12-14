@@ -10,7 +10,6 @@
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="../../../js/producto.js"></script>
 </head>
 
 <body>
@@ -86,6 +85,8 @@
             height="50px"></a>
     </section>
     <?php include '../../footer.php'; ?>
+    <script src="../../../js/producto.js"></script>
+
 </body>
 
 </html>

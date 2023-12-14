@@ -1,4 +1,4 @@
-window.onload = function () {
+// window.onload = function () {
     // Obtén el ID del producto desde el atributo de datos del elemento HTML
     // const token = localStorage.getItem('token');
     // console.log(token);
@@ -44,4 +44,4 @@ window.onload = function () {
             const sectionElement = document.querySelector('section');
             return sectionElement.dataset.productId;
         }
-};
+// };
