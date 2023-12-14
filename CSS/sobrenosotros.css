@@ -404,7 +404,7 @@ section .foto img {
 
 
 .populares h2 {
-    padding-top: 4%;
+    padding-top: 7%;
 
     text-align: center;
     font-size: 70px;
@@ -422,9 +422,9 @@ section .foto img {
     row-gap: 5%;
 
     width: 80%;
-    padding-top: 9%;
+    padding-top: 5%;
     margin: auto;
-    padding-bottom:17%;
+
 
 }
 
@@ -489,7 +489,7 @@ section .foto img {
     row-gap: 5%;
 
     width: 80%;
-    padding-top: 9%;
+    padding-top: 5%;
     margin: auto;
 
 }
