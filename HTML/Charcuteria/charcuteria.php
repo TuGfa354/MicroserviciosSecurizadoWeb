@@ -39,13 +39,50 @@
 
         }
     </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Obtener elementos con los IDs grid3 y grid4
+    var grid3Element = document.getElementById('grid3');
+    var grid4Element = document.getElementById('grid4');
 
+    // Agregar eventos de clic a los elementos
+    grid3Element.addEventListener('click', function () {
+        console.log(3)
+      cambiarColumnas('listapopulares', '1fr 1fr 1fr');
+      cambiarColumnas('listaoferta', '1fr 1fr 1fr');
+
+    });
+
+    grid4Element.addEventListener('click', function () {
+        console.log(4)
+      cambiarColumnas('listaoferta', '1fr 1fr 1fr 1fr');
+      cambiarColumnas('listapopulares', '1fr 1fr 1fr 1fr');
+
+    });
+
+    function cambiarColumnas(claseLista, nuevoValor) {
+      // Obtener el elemento con la clase especificada
+      var lista = document.querySelector('.' + claseLista);
+
+      // Cambiar el valor de grid-template-columns
+      if (lista) {
+        lista.style.gridTemplateColumns = nuevoValor;
+      }
+    }
+  });
+</script>
 </head>
 
 <body>
     <?php include '../header.php'; ?>
     <section>
         <div class="productos">
+        <div>
+                <i class="bi bi-grid" id="grid4"></i> <!-- Este es el icono de grid -->
+            </div>
+            <div>
+                <i class="bi bi-grid-3x2" id="grid3"></i> <!-- Este es el segundo icono -->
+            </div>
             <div class="populares">
                 <h2 id="Embutidos">Embutidos</h2>
                 <div class="listapopulares">
