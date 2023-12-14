@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../../../js/producto.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                 <button class="boton">Añadir al carrito</button>
             </div>
         </div>
-
+        <hr class="h">
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
@@ -89,6 +89,7 @@
     <?php
     include '../../footer.php';
     ?>
+     <script src="../../../js/producto.js"></script>
 </body>
 
 </html>

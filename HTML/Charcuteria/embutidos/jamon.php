@@ -49,7 +49,7 @@
                 <button class="boton">Añadir al carrito</button>
             </div>
         </div>
-
+        <hr class="h">
 
         <div class="populares">
             <h2>Productos relacionados</h2>

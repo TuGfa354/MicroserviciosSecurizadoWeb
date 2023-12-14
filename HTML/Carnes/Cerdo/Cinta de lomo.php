@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../../../js/producto.js"></script>
 </head>
 
 <body>
@@ -17,40 +16,7 @@
     <?php
     include '../../header.php';
     ?>
-    <div class="banner">
-        <h1>Cinta de lomo de cerdo</h1>
-        <p>Inicio → Carnicería → Cinta de lomo de cerdo</p>
-    </div>
-    <section data-product-id="18">
-
-        <div class="producto">
-            <div class="img">
-                <img src="../../../img/Carnes/Cerdos/cinta-de-lomo-fresca.webp" alt="Aguja de ternera">
-            </div>
-            <div class="texto">
-                <p class="titulo">Cinta de lomo de cerdo</p>
-                <br>
-                <p class="precio">7.70€</p>
-                <br>
-                <p class="kilos">7.70 €/kg</p>
-                <br>
-                <p class="categoria"><b>Categoría :</b> Cerdo</p>
-                <br>
-
-                <div class="select">
-                    <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion">
-                        <option value="0">Elige una opción</option>
-                        <option value="1">Fileteado fino</option>
-                        <option value="2">Fileteado grueso</option>
-                    </select>
-                </div>
-                <label for="cantidad">Cuántas unidades</label>
-                <input id="numero" type="number">
-                <button class="boton">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="banner">
+     <div class="banner">
         <p>
             <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
                 <i class="fa-sharp fa-solid fa-house-chimney"></i>
@@ -81,7 +47,7 @@
                 <button class="boton">Añadir al carrito</button>
             </div>
         </div>
-
+        <hr class="h">
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
@@ -122,6 +88,9 @@
     <?php
     include '../../footer.php';
     ?>
+     <script src="../../../js/producto.js"></script>
 </body>
+
+
 
 </html>

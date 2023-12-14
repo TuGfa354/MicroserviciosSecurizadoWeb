@@ -46,11 +46,11 @@
                 </div>
                 <label for="cantidad">Cuántas unidades</label>
                 <input id="numero" type="number">
-                <button class="boton">Añadir al carrito</button>v>
+                <button class="boton">Añadir al carrito</button>
             </div>
         </div>
 
-
+        <hr class="h">
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">

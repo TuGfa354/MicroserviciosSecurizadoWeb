@@ -56,28 +56,7 @@
         </p>
     </div>
 
-    <section data-product-id="1">
-
-    <div class="producto">
-            <div class="img">
-                <img id="productImage" alt="Pechuga de pollo">
-            </div>
-            <div class="texto">
-                <p class="titulo" id="productTitle"></p>
-                <br>
-                <p class="precio" id="productPrice"></p>
-                <br>
-                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
-                <br>
-                <div class="select">
-                    <label for="seleccion">Modo de preparación</label>
-                    <select name="seleccion" id="seleccion"></select>
-                </div>
-                <label for="cantidad">Cuántas unidades</label>
-                <input id="numero" type="number">
-                <button class="boton">Añadir al carrito</button>
-            </div>
-        </div>
+    <hr class="h">
 
 
         <div class="populares">

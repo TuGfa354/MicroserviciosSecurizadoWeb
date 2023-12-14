@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../../../CSS/producto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
-    <script src="../../../js/producto.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,10 +17,9 @@
     <?php
     include '../../header.php';
     ?>
-    <div class="banner">
+     <div class="banner">
         <p>
             <a href="http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/sobrenosotros.php">
-            <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
                 <i class="fa-sharp fa-solid fa-house-chimney"></i>
             </a> >
             <span id="productLink"></span>
@@ -28,6 +28,29 @@
 
     <section data-product-id="15">
 
+    <div class="producto">
+            <div class="img">
+                <img id="productImage" alt="Pechuga de pollo">
+            </div>
+            <div class="texto">
+                <p class="titulo" id="productTitle"></p>
+                <br>
+                <p class="precio" id="productPrice"></p>
+                <br>
+                <p class="categoria"><b>Categoría :</b> <span id="productCategory"></span></p>
+                <br>
+                <div class="select">
+                    <label for="seleccion">Modo de preparación</label>
+                    <select name="seleccion" id="seleccion"></select>
+                </div>
+                <label for="cantidad">Cuántas unidades</label>
+                <input id="numero" type="number">
+                <button class="boton">Añadir al carrito</button>
+            </div>
+        </div>
+
+  
+    <hr class="h">
     <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
@@ -69,6 +92,7 @@
     <?php
     include '../../footer.php';
     ?>
+     <script src="../../../js/producto.js"></script>
 </body>
 
 </html>

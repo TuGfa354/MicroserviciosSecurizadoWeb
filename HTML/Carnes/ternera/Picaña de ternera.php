@@ -45,7 +45,7 @@
             </div>
         </div>
 
-
+        <hr class="h">
         <div class="populares">
             <h2>Productos relacionados</h2>
             <div class="listapopulares">
