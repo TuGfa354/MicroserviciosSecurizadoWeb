@@ -362,39 +362,44 @@ label {
     text-align: center;
 
 }
-
-.boton {
-    margin: auto;
-    width: 35%;
-
-}
-
-.btn {
-    background-color: rgba(229, 34, 32, 255);
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.8;
-    transition: 0.3s;
-    margin-top: 10%;
-    cursor: pointer;
-    box-shadow: 0 9px #999;
-    border-radius: 15px;
-
-}
-
-.btn:active {
-
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.btn:hover {
-    opacity: 1
-}
+.boton{
+    background:#4e0a0a;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin-left: 70%;
+    margin-top: 5%;
+  }
+  .boton:hover{
+    background:#fff;
+    color:#4e0a0a;
+  }
+  .boton:before,.boton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #4e0a0a;
+    transition:400ms ease all;
+  }
+  .boton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .boton:hover:before,.boton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
 
 
 
