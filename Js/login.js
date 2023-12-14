@@ -31,12 +31,12 @@ function enviarFormulario() {
             // Hacer algo con la respuesta del servidor, si es necesario
             var token = data.jwt;
             var expirationTime = new Date().getTime() + 60 * 60 * 1000;
-            setToken(token, expirationTime);
+            // Move the setToken declaration above its usage
             const setToken = (token, expirationTime) => {
                 localStorage.setItem('token', token);
                 localStorage.setItem('tokenExpiration', expirationTime);
-              };
-
+            };
+            setToken(token, expirationTime);
         })
         .catch(error => {
             console.error('Error al enviar los datos:', error);

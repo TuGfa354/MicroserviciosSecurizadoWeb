@@ -54,26 +54,26 @@
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="asado.php"><img src="../../../img/Carnes/Ternera/Asado.jpg" title="asado"></a>
+                            <a href="chuleton de ternera.php"><img src="../../../img/Carnes/Ternera/Chuleton.jpg" title="Chuletón"></a>
                         </div>
-                        <h3>Asado de tira</h3>
-                        <p>8,99€ </p>
+                        <h3>Chuletón de ternera</h3>
+                        <p>19,99€ </p>
                     </div>
 
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="aguja.php"><img src="../../../img/Carnes/Ternera/aguja-de-ternera.jpg" title="asado"></a>
+                            <a href="picaña de ternera.php"><img src="../../../img/Carnes/Ternera/Picana.jpg" title="Picaña"></a>
                         </div>
-                        <h3>Aguja de ternera</h3>
-                        <p>11,99€ </p>
+                        <h3>Picaña de ternera</h3>
+                        <p>15,99€ </p>
                     </div>
                 </div>
                 <div class="corte">
                     <div class="borde">
                         <div class="foto">
-                            <a href="babilla.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="asado"></a>
+                            <a href="babilla de ternera.php"><img src="../../../img/Carnes/Ternera/Babilla.jpg" title="asado"></a>
                         </div>
                         <h3>Babilla de ternera</h3>
                         <p>14,99€ </p>

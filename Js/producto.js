@@ -33,7 +33,7 @@ window.onload = function () {
             // Set the href attribute for the product link
             const productLink = document.getElementById('productLink');
             const categoryLink = `<a href="../carnes.php#${productData.categoria}">${productData.categoria}</a>`;
-            const productCategoryLink = `<a href="Carnes/${productData.categoria}/${productData.nombre.toLowerCase()}.php">${productData.nombre}</a>`;
+            const productCategoryLink = `<a href="${productData.nombre.toLowerCase()}.php">${productData.nombre}</a>`;
             productLink.innerHTML = `<a href="../carnes.php">Carnes</a> > ${categoryLink} > ${productCategoryLink}`;
         })
         .catch(error => {
