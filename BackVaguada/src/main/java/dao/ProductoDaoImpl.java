@@ -14,9 +14,13 @@ public class ProductoDaoImpl implements ProductoDao {
 
 	@Autowired
 	ProductoJpaSpring producto;
+	@Autowired
+	PreparacionJpaSpring preparacion;
 	@Override
 	public void guardarProducto(Producto p) {
 		producto.save(p);
+		preparacion.save(p.getPreparaciones().get(0));
+		
 	}
 	@Override
 	public Producto leerProducto(int idProducto) {
@@ -39,6 +43,7 @@ public class ProductoDaoImpl implements ProductoDao {
 	@Override
 	public void modificarProducto(Producto p) {
 		producto.save(p);
+		preparacion.save(p.getPreparaciones().get(0));
 
 		
 	}

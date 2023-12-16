@@ -46,7 +46,7 @@ public class ProductoController {
 	}
 	
 	@PostMapping(value="/modificar",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public void modificarProducto(@RequestBody Producto p) {		
+	public void modificarProducto(@RequestBody Producto p) {
 		service1.modificarProducto(p);
 	}
 		
