@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import dao.PreparacionDao;
 import model.Preparacion;
 @Service
-@Transactional
+//@Transactional
 
 public class PreparacionServiceImpl implements PreparacionService{
 	@Autowired

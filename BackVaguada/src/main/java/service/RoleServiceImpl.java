@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import dao.RoleJpaSpring;
 import model.Role;
 @Service
-@Transactional
+//@Transactional
 
 public class RoleServiceImpl {
 

@@ -14,7 +14,7 @@ import dao.UserJpaSpring;
 import model.User;
 
 @Service
-@Transactional
+//@Transactional
 public class UserServiceImpl implements UserDetailsService {
 	@Autowired
 	UserJpaSpring dao;

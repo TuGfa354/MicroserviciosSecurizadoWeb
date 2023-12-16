@@ -1,22 +1,11 @@
-function usuarioMenu() {
-    window.location.href = "http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/User.php"; // Reemplaza esto con la URL de tu página de registro
-}
-
-function carritoMenu() {
-// Obtén el ID del producto desde el atributo de datos del elemento HTML
-    const role = localStorage.getItem('role');
-    if(role =='USER'){
-        window.location.href = "http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/carrito.php"; // Reemplaza esto con la URL de tu página de registro
-    }else{
-        alert("Solo los usuarios pueden acceder a carrito")
-    }
-}
+const storedToken = localStorage.getItem('token');
+const storedExpirationTime = localStorage.getItem('tokenExpiration');
+const isTokenValid = storedToken && storedExpirationTime && new Date().getTime() < storedExpirationTime;
 window.onload = function () {
-    const storedToken = localStorage.getItem('token');
-    const storedExpirationTime = localStorage.getItem('tokenExpiration');
-    const isTokenValid = storedToken && storedExpirationTime && new Date().getTime() < storedExpirationTime;
+
 
     var botonLogin = document.getElementById("login");
+    console.log(storedToken, isTokenValid)
 
     if (isTokenValid) {
         console.log("Token válido, cambiando el href del enlace");
@@ -36,7 +25,24 @@ window.onload = function () {
             });
         
     }
+    
 };
+function usuarioMenu() {
+    window.location.href = "http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/User.php";
+}
+
+function carritoMenu() {
+// Obtén el ID del producto desde el atributo de datos del elemento HTML
+    const role = localStorage.getItem('role');
+    console.log(role)
+    if(role =='USER' && isTokenValid){
+        window.location.href = "http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/carrito.php"; 
+    }else if(role =='ADMIN'&& isTokenValid){
+        window.location.href = "http://localhost/vaguadaInterfaces/VaguadaInterfaces/HTML/admin.php";
+    }else{
+        alert("Inicia sesión para acceder")
+    }
+}
 
 
 

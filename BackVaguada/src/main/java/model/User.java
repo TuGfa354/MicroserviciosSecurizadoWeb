@@ -39,11 +39,11 @@ public class User implements Serializable, UserDetails{
 			inverseJoinColumns = {@JoinColumn(name="role_idrole")}
 			)
 	private Set<Role> roles;
-	@ManyToMany(fetch=FetchType.EAGER)
-	@JoinTable(name = "user_has_producto",
-	joinColumns = @JoinColumn(name = "user_idUser"),
-	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
-	private List<Producto> productos;
+//	@ManyToMany(fetch=FetchType.EAGER)
+//	@JoinTable(name = "user_has_producto",
+//	joinColumns = @JoinColumn(name = "user_idUser"),
+//	inverseJoinColumns = @JoinColumn(name = "preparacion_idPreparacion"))
+//	private List<Producto> productos;
 
 	public User() {
 		super();

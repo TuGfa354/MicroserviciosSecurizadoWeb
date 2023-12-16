@@ -19,7 +19,7 @@ import model.Role;
 import model.User;
 
 @Service
-@Transactional
+//@Transactional
 public class AuthenticationService {
 
 	@Autowired

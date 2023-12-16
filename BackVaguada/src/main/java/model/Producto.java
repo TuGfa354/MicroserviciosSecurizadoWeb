@@ -105,12 +105,16 @@ public class Producto implements Serializable{
 		this.categoria = categoria;
 	}
 
-	public List<Preparacion> getPreparacion() {
+
+
+	
+
+	public List<Preparacion> getPreparaciones() {
 		return preparaciones;
 	}
 
-	public void addPreparacion(Preparacion preparacion) {
-		this.preparaciones.add(preparacion);
+	public void setPreparaciones(List<Preparacion> preparaciones) {
+		this.preparaciones = preparaciones;
 	}
 
 	@Override

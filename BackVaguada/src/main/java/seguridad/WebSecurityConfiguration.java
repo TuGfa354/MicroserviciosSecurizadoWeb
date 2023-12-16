@@ -2,6 +2,7 @@ package seguridad;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -53,6 +54,9 @@ public class WebSecurityConfiguration {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> {
 			auth.requestMatchers("/carrito/**").hasRole("USER");
+			auth.requestMatchers("productos/guadar").hasRole("ADMIN");
+			auth.requestMatchers("productos/modificar").hasRole("ADMIN");
+			auth.requestMatchers(HttpMethod.DELETE,"productos/{id}").hasRole("ADMIN");
 			auth.requestMatchers("/**").permitAll();
 //			auth.requestMatchers("/admin/**").hasRole("ADMIN");
 			auth.anyRequest().authenticated();
