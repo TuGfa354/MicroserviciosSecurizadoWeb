@@ -23,7 +23,7 @@
             document.getElementById('productCategory').textContent = productData.categoria;
 
             const selectElement = document.getElementById('seleccion');
-            productData.preparacion.forEach(preparation => {
+            productData.preparaciones.forEach(preparation => {
                 const option = document.createElement('option');
                 option.value = preparation.idPreparacion;
                 option.textContent = preparation.nombre;
