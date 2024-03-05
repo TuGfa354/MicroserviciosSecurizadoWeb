@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update package lists
-sudo apt update
+sudo apt-get update
 
 # Install necessary packages
 sudo apt-get install -y ca-certificates curl
@@ -15,15 +15,15 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 # Set permissions for Docker GPG key
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-# Add Docker repository to sources list
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# Add Docker's official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Add Docker repository to Apt sources
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Update package lists again to fetch Docker packages
 sudo apt-get update
-
-
-# Navigate to the cloned directory
-cd MicroserviciosSecurizadoWeb/
 
 # Build Docker image
 sudo docker build -t my-php-static-site .
