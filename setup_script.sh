@@ -21,8 +21,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 # Update package lists again to fetch Docker packages
 sudo apt-get update
 
-# Clone the Git repository
-git clone https://github.com/TuGfa354/MicroserviciosSecurizadoWeb.git
 
 # Navigate to the cloned directory
 cd MicroserviciosSecurizadoWeb/
