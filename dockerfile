@@ -6,7 +6,7 @@ WORKDIR /var/www/VaguadaInterfaces
 
 # Copy the website files into the container
 COPY HTML /var/www/VaguadaInterfaces/HTML
-COPY js /var/www/VaguadaInterfaces/js
+COPY js /var/www/VaguadaInterfaces/Js
 COPY CSS /var/www/VaguadaInterfaces/CSS
 COPY img /var/www/VaguadaInterfaces/img
 
